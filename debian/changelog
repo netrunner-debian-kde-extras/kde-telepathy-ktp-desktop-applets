@@ -1,5 +1,10 @@
-ktp-contact-applet (0.4.0-0r1) UNRELEASED; urgency=low
+ktp-contact-applet (0.5.3-1) UNRELEASED; urgency=low
 
+  [ George Kiagiadakis ]
   * Initial release.
 
- -- George Kiagiadakis <kiagiadakis.george@gmail.com>  Thu, 01 Dec 2011 13:14:34 +0200
+  [ Diane Trout ]
+  * New upstream release.
+  * Remove no_kdeworkspace patch
+
+ -- Diane Trout <diane@ghic.org>  Mon, 04 Mar 2013 19:32:44 -0800
