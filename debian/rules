@@ -1,4 +1,4 @@
 #!/usr/bin/make -f
 
 %:
-	dh $@ --parallel --with kde --dbg-package=plasma-widget-telepathy-contact-dbg --list-missing
+	dh $@ --parallel --with kde --dbg-package=ktp-desktop-applets-dbg --list-missing

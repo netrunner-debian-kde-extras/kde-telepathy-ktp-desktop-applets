@@ -1,4 +1,4 @@
-ktp-contact-applet (0.5.3-1) UNRELEASED; urgency=low
+ktp-desktop-applets (0.6.2-1) UNRELEASED; urgency=low
 
   [ George Kiagiadakis ]
   * Initial release.
@@ -6,5 +6,6 @@ ktp-contact-applet (0.5.3-1) UNRELEASED; urgency=low
   [ Diane Trout ]
   * New upstream release.
   * Remove no_kdeworkspace patch
+  * Rename package to ktp-desktop-applets
 
  -- Diane Trout <diane@ghic.org>  Mon, 04 Mar 2013 19:32:44 -0800

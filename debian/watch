@@ -1,0 +1,4 @@
+version=3
+
+ftp://ftp.kde.org/pub/kde/stable/kde-telepathy/([\d.]+)/src/ktp-desktop-applets-([\d.]+).tar.bz2
+

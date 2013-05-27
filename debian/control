@@ -1,4 +1,4 @@
-Source: ktp-contact-applet
+Source: ktp-desktop-applets
 Section: kde
 Priority: optional
 Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
@@ -8,27 +8,32 @@ Build-Depends: debhelper (>= 9),
  libtelepathy-qt4-dev (>= 0.9.1),
  kdelibs5-dev (>= 4:4.6),
  cmake (>= 2.8),
- libktpcommoninternalsprivate-dev (>= 0.4.0)
+ libktpcommoninternalsprivate-dev (>= 0.6.2),
+ libktpchat0
 Standards-Version: 3.9.3
-Homepage: https://projects.kde.org/projects/extragear/network/telepathy/ktp-contact-applet
-Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-extras/kde-telepathy/ktp-contact-applet.git
-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-extras/kde-telepathy/ktp-contact-applet.git
+Homepage: https://projects.kde.org/projects/extragear/network/telepathy/ktp-desktop-applets
+Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-extras/kde-telepathy/ktp-desktop-applets.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-extras/kde-telepathy/ktp-desktop-applets.git
 
-Package: plasma-widget-telepathy-contact
+Package: ktp-desktop-applets
 Architecture: any
+Replaces: plasma-widget-telepathy-presence (<< 0.6.0-1), 
+ plasma-widget-telepathy-chat (<< 0.6.0-1),
+ ktp-telepathy-contact-list (<< 0.6.0-1)
+Breaks:
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: KDE Telepathy contact plasmoid
- This package provides a plasma widget that allows you to have any
+ This package provides widgets that allows you to have any
  of your IM contacts easily accessible as an icon on your desktop.
  .
  This package is not meant to be used standalone. It is recommended
  to install the kde-telepathy metapackage instead.
 
-Package: plasma-widget-telepathy-contact-dbg
+Package: ktp-desktop-applets-dbg
 Architecture: any
 Section: debug
 Priority: extra
-Depends: plasma-widget-telepathy-contact (= ${binary:Version}), ${misc:Depends}
+Depends: ktp-desktop-applets (= ${binary:Version}), ${misc:Depends}
 Description: KDE Telepathy contact plasmoid - debug symbols
- This package provides the debug symbols for the KDE Telepathy contact
- plasmoid.
+ This package provides the debug symbols for the KDE Telepathy contact, 
+ chat, and presence plasmoids.
