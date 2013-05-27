@@ -33,7 +33,7 @@ Package: kde-telepathy-desktop-applets-dbg
 Architecture: any
 Section: debug
 Priority: extra
-Depends: ktp-desktop-applets (= ${binary:Version}), ${misc:Depends}
+Depends: kde-telepathy-desktop-applets (= ${binary:Version}), ${misc:Depends}
 Description: KDE Telepathy contact plasmoid - debug symbols
  This package provides the debug symbols for the KDE Telepathy contact, 
  chat, and presence plasmoids.
