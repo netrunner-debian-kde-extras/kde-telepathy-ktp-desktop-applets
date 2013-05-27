@@ -15,11 +15,11 @@ Homepage: https://projects.kde.org/projects/extragear/network/telepathy/ktp-desk
 Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-extras/kde-telepathy/ktp-desktop-applets.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-extras/kde-telepathy/ktp-desktop-applets.git
 
-Package: ktp-desktop-applets
+Package: kde-telepathy-desktop-applets
 Architecture: any
-Replaces: plasma-widget-telepathy-presence (<< 0.6.0-1), 
- plasma-widget-telepathy-chat (<< 0.6.0-1),
- ktp-telepathy-contact-list (<< 0.6.0-1)
+Replaces: plasma-widget-telepathy-presence (<= 0.6.1-1), 
+ plasma-widget-telepathy-chat (<= 0.6.1-1),
+ ktp-telepathy-contact-list (<= 0.6.1-1)
 Breaks:
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: KDE Telepathy contact plasmoid
@@ -29,7 +29,7 @@ Description: KDE Telepathy contact plasmoid
  This package is not meant to be used standalone. It is recommended
  to install the kde-telepathy metapackage instead.
 
-Package: ktp-desktop-applets-dbg
+Package: kde-telepathy-desktop-applets-dbg
 Architecture: any
 Section: debug
 Priority: extra
