@@ -1,4 +1,4 @@
-ktp-desktop-applets (0.6.2-1) UNRELEASED; urgency=low
+ktp-desktop-applets (0.6.2-2) UNRELEASED; urgency=low
 
   [ George Kiagiadakis ]
   * Initial release.
@@ -7,5 +7,6 @@ ktp-desktop-applets (0.6.2-1) UNRELEASED; urgency=low
   * New upstream release.
   * Remove no_kdeworkspace patch
   * Rename package to ktp-desktop-applets
+  * Rename binary packages to kde-telepathy-desktop-applets to be more consistent with the other packages.
 
- -- Diane Trout <diane@ghic.org>  Mon, 04 Mar 2013 19:32:44 -0800
+ -- Diane Trout <diane@ghic.org>  Mon, 27 May 2013 11:09:12 -0700
