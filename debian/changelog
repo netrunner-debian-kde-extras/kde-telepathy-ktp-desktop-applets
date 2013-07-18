@@ -8,7 +8,7 @@ ktp-desktop-applets (0.6.2-2) UNRELEASED; urgency=low
   * Remove no_kdeworkspace patch
   * Rename package to ktp-desktop-applets
   * Rename binary packages to kde-telepathy-desktop-applets to be
-	   more consistent with the other packages.
+    more consistent with the other packages.
   * Set Uploaders to Diane Trout and Michał Zając
   * Imported Kubuntu's more complete copyright file.
   * Update Standards-Version to 3.9.4. No changes needed.
