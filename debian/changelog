@@ -12,5 +12,6 @@ ktp-desktop-applets (0.6.2-1) UNRELEASED; urgency=low
   * Set Uploaders to Diane Trout and Michał Zając
   * Imported Kubuntu's more complete copyright file.
   * Update Standards-Version to 3.9.4. No changes needed.
+  * Add dependency on kde-telepathy-declarative for QML components.
 
  -- Diane Trout <diane@ghic.org>  Mon, 27 May 2013 11:09:12 -0700
