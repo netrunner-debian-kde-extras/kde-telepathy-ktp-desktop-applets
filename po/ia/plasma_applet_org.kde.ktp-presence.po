@@ -1,0 +1,70 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Giovanni Sora <g.sora@tiscali.it>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2013-03-27 10:06+0100\n"
+"PO-Revision-Date: 2013-03-13 13:33+0100\n"
+"Last-Translator: Giovanni Sora <g.sora@tiscali.it>\n"
+"Language-Team: Interlingua <kde-i18n-ia@kde.org>\n"
+"Language: ia\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.4\n"
+
+#: src/presence-applet.cpp:164
+msgid "More"
+msgstr "Altere"
+
+#: src/presence-applet.cpp:166
+msgid "Online"
+msgstr "In linea"
+
+#: src/presence-applet.cpp:167
+msgid "Busy"
+msgstr "Occupate"
+
+#: src/presence-applet.cpp:168
+msgid "Away"
+msgstr "Absente"
+
+#: src/presence-applet.cpp:169
+msgid "Not Available"
+msgstr "Non disponibile"
+
+#: src/presence-applet.cpp:170
+msgid "Invisible"
+msgstr "Invisibile"
+
+#: src/presence-applet.cpp:171
+msgid "Offline"
+msgstr "Foras de linea"
+
+#: src/presence-applet.cpp:172
+msgid "Join Chat Room..."
+msgstr "Uni te al sala de conversation..."
+
+#: src/presence-applet.cpp:182
+msgid "Account Manager..."
+msgstr "Gerente de conto..."
+
+#: src/presence-applet.cpp:183
+msgid "Contact List..."
+msgstr "Lista de contacto..."
+
+#: src/presence-applet.cpp:184
+msgid "Add New Contacts..."
+msgstr "Adde nove contactos"
+
+#: src/presence-applet.cpp:187
+msgid "Make a Call..."
+msgstr "Face un appello..."
+
+#: src/presence-applet.cpp:349
+msgid "Connecting..."
+msgstr "Il connecte..."

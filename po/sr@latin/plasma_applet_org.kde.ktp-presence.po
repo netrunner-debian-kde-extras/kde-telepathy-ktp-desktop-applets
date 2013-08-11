@@ -1,0 +1,71 @@
+# Translation of plasma_applet_org.kde.ktp-presence.po into Serbian.
+# Chusslove Illich <caslav.ilic@gmx.net>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma_applet_org.kde.ktp-presence\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2013-03-27 10:06+0100\n"
+"PO-Revision-Date: 2013-03-17 19:16+0100\n"
+"Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
+"Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
+"Language: sr@latin\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+"X-Environment: kde\n"
+
+#: src/presence-applet.cpp:164
+msgid "More"
+msgstr "Još"
+
+#: src/presence-applet.cpp:166
+msgid "Online"
+msgstr "Na vezi"
+
+#: src/presence-applet.cpp:167
+msgid "Busy"
+msgstr "Zauzet"
+
+#: src/presence-applet.cpp:168
+msgid "Away"
+msgstr "Odsutan"
+
+#: src/presence-applet.cpp:169
+msgid "Not Available"
+msgstr "Nedostupan"
+
+#: src/presence-applet.cpp:170
+msgid "Invisible"
+msgstr "Nevidljiv"
+
+#: src/presence-applet.cpp:171
+msgid "Offline"
+msgstr "Van veze"
+
+#: src/presence-applet.cpp:172
+msgid "Join Chat Room..."
+msgstr "U sobu za ćaskanje..."
+
+#: src/presence-applet.cpp:182
+msgid "Account Manager..."
+msgstr "Menadžer naloga..."
+
+#: src/presence-applet.cpp:183
+msgid "Contact List..."
+msgstr "Lista kontakata..."
+
+#: src/presence-applet.cpp:184
+msgid "Add New Contacts..."
+msgstr "Dodaj nove kontakte..."
+
+#: src/presence-applet.cpp:187
+msgid "Make a Call..."
+msgstr "Pozovi..."
+
+#: src/presence-applet.cpp:349
+msgid "Connecting..."
+msgstr "Povezujem se..."

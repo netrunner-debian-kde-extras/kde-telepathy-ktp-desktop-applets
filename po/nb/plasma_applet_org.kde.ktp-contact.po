@@ -28,5 +28,6 @@ msgid "Your emails"
 msgstr "bjornst@skogkatt.homelinux.org"
 
 #: src/applet_config.cpp:37
+#, fuzzy
 msgid "Select a contact"
 msgstr "Velg en kontakt"
