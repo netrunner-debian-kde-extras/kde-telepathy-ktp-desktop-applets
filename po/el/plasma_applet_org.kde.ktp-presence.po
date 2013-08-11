@@ -1,0 +1,92 @@
+# plasma_applet_ktp_presence.po translation [el]
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Stelios <sstavra@gmail.com>, 2012.
+# Dimitrios Glentadakis <dglent@gmail.com>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma_applet_ktp_presence\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2013-03-27 10:06+0100\n"
+"PO-Revision-Date: 2013-03-24 13:24+0200\n"
+"Last-Translator: Stelios <sstavra@gmail.com>\n"
+"Language-Team: Greek <kde-i18n-el@kde.org>\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.4\n"
+
+#: src/presence-applet.cpp:164
+msgid "More"
+msgstr "Περισσότερα"
+
+#: src/presence-applet.cpp:166
+msgid "Online"
+msgstr "Σε σύνδεση"
+
+#: src/presence-applet.cpp:167
+msgid "Busy"
+msgstr "Απασχολημένος"
+
+#: src/presence-applet.cpp:168
+msgid "Away"
+msgstr "Αλλού"
+
+#: src/presence-applet.cpp:169
+msgid "Not Available"
+msgstr "Μη διαθέσιμος"
+
+#: src/presence-applet.cpp:170
+msgid "Invisible"
+msgstr "Αόρατος"
+
+#: src/presence-applet.cpp:171
+msgid "Offline"
+msgstr "Εκτός σύνδεσης"
+
+#: src/presence-applet.cpp:172
+msgid "Join Chat Room..."
+msgstr "Είσοδος στην αίθουσα συνομιλίας..."
+
+#: src/presence-applet.cpp:182
+msgid "Account Manager..."
+msgstr "Πρόγραμμα διαχείρισης λογαριασμού..."
+
+#: src/presence-applet.cpp:183
+msgid "Contact List..."
+msgstr "Λίστα επαφών..."
+
+#: src/presence-applet.cpp:184
+msgid "Add New Contacts..."
+msgstr "Προσθήκη νέων επαφών..."
+
+#: src/presence-applet.cpp:187
+msgid "Make a Call..."
+msgstr "Κάνετε μία κλήση..."
+
+#: src/presence-applet.cpp:349
+msgid "Connecting..."
+msgstr "Συνδέεται..."
+
+#~ msgid ""
+#~ "Seems like you forgot to select an account. Also do not forget to connect "
+#~ "it first."
+#~ msgstr ""
+#~ "Φαίνεται ότι ξεχάσατε να επιλέξετε λογαριασμό. Επίσης μην ξεχάσετε να "
+#~ "συνδεθείτε σε αυτόν πρώτα."
+
+#~ msgid "No Account Selected"
+#~ msgstr "Δεν έγινε επιλογή λογαριασμού"
+
+#~ msgid ""
+#~ "An error we did not anticipate just happened and so the contact could not "
+#~ "be added. Sorry."
+#~ msgstr ""
+#~ "Ένα σφάλμα που δεν υπολογίζαμε απλά συνέβη και έτσι η επαφή δεν ήταν "
+#~ "δυνατό να προστεθεί. Συγγνώμη."
+
+#~ msgid "Account Error"
+#~ msgstr "Σφάλμα λογαριασμού"
