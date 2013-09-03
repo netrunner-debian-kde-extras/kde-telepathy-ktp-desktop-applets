@@ -1,3 +1,9 @@
+ktp-desktop-applets (0.6.3-2) UNRELEASED; urgency=low
+
+  * Remove unneeded Build-Depends libktpchat and kde-telepathy-declarative
+
+ -- Diane Trout <diane@ghic.org>  Mon, 02 Sep 2013 16:55:40 -0700
+
 ktp-desktop-applets (0.6.3-1) unstable; urgency=low
 
   [ George Kiagiadakis ]
