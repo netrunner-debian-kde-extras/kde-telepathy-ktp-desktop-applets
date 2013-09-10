@@ -1,3 +1,10 @@
+ktp-desktop-applets (0.6.3-3) UNRELEASED; urgency=low
+
+  * Fix typo in description (Thanks Pablo D. Pareja Obregón for
+    the report)
+
+ -- Diane Trout <diane@ghic.org>  Tue, 10 Sep 2013 13:51:59 -0700
+
 ktp-desktop-applets (0.6.3-2) unstable; urgency=low
 
   * Team upload.
