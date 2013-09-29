@@ -19,7 +19,7 @@
 */
 
 import QtQuick 1.0
-import org.kde.telepathy 0.1
+import org.kde.telepathy 0.1 as KTp
 import org.kde.plasma.components 0.1 as PlasmaComponents
 import org.kde.plasma.core 0.1 as PlasmaCore
 import org.kde.qtextracomponents 0.1 as ExtraComponents
@@ -45,22 +45,34 @@ Grid {
     rows:    flow===Flow.LeftToRight ?  1 : -1
     columns: flow===Flow.LeftToRight ? -1 :  1
 
-    TelepathyTextObserver { id: handler }
-    HideWindowComponent { id: windowHide }
+
+    KTp.ConversationsModel {
+        id: conversationsModel
+    }
+
+    KTp.HideWindowComponent {
+        id: windowHide
+    }
+
     Binding {
         target: plasmoid
         property: "status"
-        value: (base.currentIndex >= 0                     ? AcceptingInputStatus
-                : handler.conversations.totalUnreadCount>0 ? NeedsAttentionStatus
-                : conversationsView.count>0                ? ActiveStatus
-                                                           : PassiveStatus)
+        value: (base.currentIndex >= 0                  ? AcceptingInputStatus
+                : conversationsModel.totalUnreadCount>0 ? NeedsAttentionStatus
+                : conversationsView.count>0             ? ActiveStatus
+                                                        : PassiveStatus)
     }
 
     Component.onCompleted: {
+        telepathyManager.addTextChatFeatures();
+        telepathyManager.registerClient(conversationsModel, "KTp.ChatPlasmoid");
         plasmoid.aspectRatioMode = plasmoid.IgnoreAspectRatio
         plasmoid.addEventListener('activate', function() {
-            base.currentIndex = handler.conversations.nextActiveConversation(base.currentIndex+1 % handler.conversations)
+            base.currentIndex = conversationsModel.nextActiveConversation(base.currentIndex+1 % conversationsModel.count)
         });
+    }
+    Component.onDestruction: {
+        telepathyManager.unregisterClient(conversationsModel);
     }
 
     Repeater {
@@ -68,7 +80,7 @@ Grid {
         delegate: ConversationDelegateButton {
             width: base.itemWidth
             height: base.itemHeight
-            onClicked: handler.conversations.startChat(account, contact)
+            onClicked: telepathyManager.startChat(account, contact)
             avatar: decoration
             overlay: ExtraComponents.QIconItem {
                     anchors.fill: parent
@@ -78,11 +90,11 @@ Grid {
             account: model.account
             contact: model.contact
         }
-        model: FilteredPinnedContactsProxyModel {
-            sourceModel: PinnedContactsModel {
+        model: KTp.FilteredPinnedContactsProxyModel {
+            sourceModel: KTp.PinnedContactsModel {
                 id: pinnedModel
-                conversations: handler.conversations
-                accountManager: handler.accountManager
+                conversations: conversationsModel
+                accountManager: telepathyManager.accountManager
 
                 Component.onCompleted: plasmoid.addEventListener('ConfigChanged',
                                         function() {
@@ -111,9 +123,10 @@ Grid {
             height: base.itemHeight
             popupSide: base.popupSide
         }
-        model: handler.conversations
+        model: conversationsModel
         onCountChanged: if(base.currentIndex>=conversationsView.count) {
             base.currentIndex = -1;
         }
     }
 }
+
