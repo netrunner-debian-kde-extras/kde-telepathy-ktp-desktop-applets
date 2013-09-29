@@ -53,6 +53,9 @@ public:
     QList<QAction*> contextualActions();
     void init();
 
+public slots:
+     Q_SCRIPTABLE int handleCustomPresenceChange();
+
 private Q_SLOTS:
     void onAccountManagerReady(Tp::PendingOperation *op);
     void onAccountsChanged();
@@ -69,6 +72,7 @@ private Q_SLOTS:
     void toggleContactList();
     void onAddContactRequest();
     void onMakeCallRequest();
+    void onSendFileRequest();
 
     void contactListServiceRegistered();
     void contactListServiceUnregistered();
@@ -93,6 +97,9 @@ private:
 
     QDBusServiceWatcher  *m_contactListWatcher;
     bool                  m_contactListRunning;
+
+    void addPresence(const KTp::Presence &presence);
+    QList<KTp::Presence> m_presences;
 };
 
 #endif  // KTP_PRESENCE_APPLET_H

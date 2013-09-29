@@ -1,0 +1,67 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma_applet_org.kde.telepathy-presence\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2013-03-27 10:06+0100\n"
+"PO-Revision-Date: 2011-12-04 13:34-0800\n"
+"Last-Translator: Japanese KDE translation team <Kdeveloper@kde.gr.jp>\n"
+"Language-Team: Japanese <Kdeveloper@kde.gr.jp>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+
+#: src/presence-applet.cpp:164
+msgid "More"
+msgstr ""
+
+#: src/presence-applet.cpp:166
+msgid "Online"
+msgstr ""
+
+#: src/presence-applet.cpp:167
+msgid "Busy"
+msgstr ""
+
+#: src/presence-applet.cpp:168
+msgid "Away"
+msgstr ""
+
+#: src/presence-applet.cpp:169
+msgid "Not Available"
+msgstr ""
+
+#: src/presence-applet.cpp:170
+msgid "Invisible"
+msgstr ""
+
+#: src/presence-applet.cpp:171
+msgid "Offline"
+msgstr ""
+
+#: src/presence-applet.cpp:172
+msgid "Join Chat Room..."
+msgstr ""
+
+#: src/presence-applet.cpp:182
+msgid "Account Manager..."
+msgstr ""
+
+#: src/presence-applet.cpp:183
+msgid "Contact List..."
+msgstr ""
+
+#: src/presence-applet.cpp:184
+msgid "Add New Contacts..."
+msgstr ""
+
+#: src/presence-applet.cpp:187
+msgid "Make a Call..."
+msgstr ""
+
+#: src/presence-applet.cpp:349
+msgid "Connecting..."
+msgstr ""

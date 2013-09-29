@@ -2,7 +2,7 @@
     Copyright (C) 2012  Lasath Fernando <kde@lasath.org>
     Copyright (C) 2012 David Edmundson <kde@davidedmundson.co.uk>
     Copyright (C) 2012 Aleix Pol <aleixpol@kde.org>
-    
+
     This library is free software; you can redistribute it and/or
     modify it under the terms of the GNU Lesser General Public
     License as published by the Free Software Foundation; either
@@ -29,11 +29,6 @@ FocusScope {
     property Conversation conv
 
     signal closeRequested
-
-    Connections {
-        target: chatWidget.conv
-        onValidChanged: chatWidget.closeRequested()
-    }
 
     Item {
         id: titleArea
@@ -152,16 +147,15 @@ FocusScope {
             top: space.bottom
             left: parent.left
             right: parent.right
-            bottom: input.top
-            topMargin: 3
+            bottom: disconnectedLabel.top
             rightMargin: viewScrollBar.width+5
             leftMargin: 5
         }
         boundsBehavior: Flickable.StopAtBounds
-        section.property: "user"
+        section.property: "senderAlias"
         section.delegate: PlasmaComponents.Label { text: section; font.bold: true; anchors.right: parent.right}
         clip: true
-        
+
         //we need this so that scrolling down to the last element works properly
         //this means that all the list is in memory
         cacheBuffer: contentHeight
@@ -187,7 +181,7 @@ FocusScope {
         model: conv.messages
         onMovementEnded: followConversation = atYEnd //we only follow the conversation if moved to the end
 
-        onCountChanged: {
+        onContentHeightChanged: {
             if(followConversation && contentHeight>height) {
                 view.positionViewAtEnd()
             }
@@ -211,9 +205,25 @@ FocusScope {
         Behavior on opacity { NumberAnimation { duration: 250 } }
     }
 
+
+    PlasmaComponents.Label {
+        id: disconnectedLabel
+        visible: !conv.valid
+
+        anchors {
+            left: parent.left
+            right: parent.right
+            bottom: input.top
+        }
+
+        text: i18n("Chat is not connected. You cannot send messages at this time")
+        wrapMode: Text.Wrap
+    }
+
     PlasmaComponents.TextField {
         id: input
         focus: true
+        enabled: conv.valid
 
         anchors {
             left: parent.left

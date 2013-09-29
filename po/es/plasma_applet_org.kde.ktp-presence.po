@@ -1,0 +1,89 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Kira J. Fernández <kirajfdez@gmail.com>, 2011.
+# Eloy Cuadra <ecuadra@eloihr.net>, 2012.
+# Raul Gonzalez <raulgf83@gmail.com>, 2012, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2013-03-27 10:06+0100\n"
+"PO-Revision-Date: 2013-03-14 18:29+0100\n"
+"Last-Translator: Raul Gonzalez <raulgf83@gmail.com>\n"
+"Language-Team: Spanish <kde-l10n-es@kde.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: src/presence-applet.cpp:164
+msgid "More"
+msgstr "Más"
+
+#: src/presence-applet.cpp:166
+msgid "Online"
+msgstr "Conectado"
+
+#: src/presence-applet.cpp:167
+msgid "Busy"
+msgstr "Ocupado"
+
+#: src/presence-applet.cpp:168
+msgid "Away"
+msgstr "Ausente"
+
+#: src/presence-applet.cpp:169
+msgid "Not Available"
+msgstr "No disponible"
+
+#: src/presence-applet.cpp:170
+msgid "Invisible"
+msgstr "Invisible"
+
+#: src/presence-applet.cpp:171
+msgid "Offline"
+msgstr "Desconectado"
+
+#: src/presence-applet.cpp:172
+msgid "Join Chat Room..."
+msgstr "Unirse a la sala de charla..."
+
+#: src/presence-applet.cpp:182
+msgid "Account Manager..."
+msgstr "Gestor de cuentas..."
+
+#: src/presence-applet.cpp:183
+msgid "Contact List..."
+msgstr "Lista de contactos..."
+
+#: src/presence-applet.cpp:184
+msgid "Add New Contacts..."
+msgstr "Añadir nuevos contactos..."
+
+#: src/presence-applet.cpp:187
+msgid "Make a Call..."
+msgstr "Hacer una llamada..."
+
+#: src/presence-applet.cpp:349
+msgid "Connecting..."
+msgstr "Conectando..."
+
+#, fuzzy
+#~| msgid "Account Manager"
+#~ msgid "Account Error"
+#~ msgstr "Gestor de cuentas"
+
+#~ msgid "General"
+#~ msgstr "General"
+
+#~ msgid "On click:"
+#~ msgstr "Al hacer clic:"
+
+#~ msgid "Do Nothing"
+#~ msgstr "No hacer nada"
+
+#~ msgid "Show Account Manager"
+#~ msgstr "Mostrar gestor de cuentas"

@@ -1,0 +1,71 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Volkan, 2013.
+# Volkan Gezer <volkangezer@gmail.com>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2013-03-27 10:06+0100\n"
+"PO-Revision-Date: 2013-07-08 03:53+0200\n"
+"Last-Translator: Volkan Gezer <volkangezer@gmail.com>\n"
+"Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Lokalize 1.5\n"
+
+#: src/presence-applet.cpp:164
+msgid "More"
+msgstr "Daha fazla"
+
+#: src/presence-applet.cpp:166
+msgid "Online"
+msgstr "Çevrimiçi"
+
+#: src/presence-applet.cpp:167
+msgid "Busy"
+msgstr "Meşgul"
+
+#: src/presence-applet.cpp:168
+msgid "Away"
+msgstr "Uzakta"
+
+#: src/presence-applet.cpp:169
+msgid "Not Available"
+msgstr "Uygun Değil"
+
+#: src/presence-applet.cpp:170
+msgid "Invisible"
+msgstr "Görünmez"
+
+#: src/presence-applet.cpp:171
+msgid "Offline"
+msgstr "Çevrimdışı"
+
+#: src/presence-applet.cpp:172
+msgid "Join Chat Room..."
+msgstr "Sohbet Odasına Katıl..."
+
+#: src/presence-applet.cpp:182
+msgid "Account Manager..."
+msgstr "Hesap Yöneticisi..."
+
+#: src/presence-applet.cpp:183
+msgid "Contact List..."
+msgstr "Kişi Listesi..."
+
+#: src/presence-applet.cpp:184
+msgid "Add New Contacts..."
+msgstr "Yeni Kişi Ekle..."
+
+#: src/presence-applet.cpp:187
+msgid "Make a Call..."
+msgstr "Bir Arama Yap..."
+
+#: src/presence-applet.cpp:349
+msgid "Connecting..."
+msgstr "Bağlanıyor..."

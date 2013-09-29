@@ -1,0 +1,72 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Andrej Vernekar <andrej.vernekar@gmail.com>, 2012.
+# Andrej Mernik <andrejm@ubuntu.si>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2013-03-27 10:06+0100\n"
+"PO-Revision-Date: 2013-03-13 19:40+0100\n"
+"Last-Translator: Andrej Mernik <andrejm@ubuntu.si>\n"
+"Language-Team: Slovenian <lugos-slo@lugos.si>\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
+"%100==4 ? 3 : 0);\n"
+"X-Generator: Lokalize 1.5\n"
+
+#: src/presence-applet.cpp:164
+msgid "More"
+msgstr "Več"
+
+#: src/presence-applet.cpp:166
+msgid "Online"
+msgstr "Povezan"
+
+#: src/presence-applet.cpp:167
+msgid "Busy"
+msgstr "Zaposlen"
+
+#: src/presence-applet.cpp:168
+msgid "Away"
+msgstr "Odsoten"
+
+#: src/presence-applet.cpp:169
+msgid "Not Available"
+msgstr "Ni na voljo"
+
+#: src/presence-applet.cpp:170
+msgid "Invisible"
+msgstr "Neviden"
+
+#: src/presence-applet.cpp:171
+msgid "Offline"
+msgstr "Nepovezan"
+
+#: src/presence-applet.cpp:172
+msgid "Join Chat Room..."
+msgstr "Pridruži se klepetalnici ..."
+
+#: src/presence-applet.cpp:182
+msgid "Account Manager..."
+msgstr "Upravljalnik računov ..."
+
+#: src/presence-applet.cpp:183
+msgid "Contact List..."
+msgstr "Seznam stikov ..."
+
+#: src/presence-applet.cpp:184
+msgid "Add New Contacts..."
+msgstr "Dodaj nove stike ..."
+
+#: src/presence-applet.cpp:187
+msgid "Make a Call..."
+msgstr "Pokliči ..."
+
+#: src/presence-applet.cpp:349
+msgid "Connecting..."
+msgstr "Povezovanje ..."

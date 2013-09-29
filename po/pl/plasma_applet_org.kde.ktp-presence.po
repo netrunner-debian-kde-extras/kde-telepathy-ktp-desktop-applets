@@ -1,0 +1,103 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2012, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2013-03-27 10:06+0100\n"
+"PO-Revision-Date: 2013-04-01 08:30+0200\n"
+"Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
+"Language-Team: Polish <kdei18n-pl-uwagi>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+
+#: src/presence-applet.cpp:164
+msgid "More"
+msgstr "Więcej"
+
+#: src/presence-applet.cpp:166
+msgid "Online"
+msgstr "Dostępny"
+
+#: src/presence-applet.cpp:167
+msgid "Busy"
+msgstr "Zajęty"
+
+#: src/presence-applet.cpp:168
+msgid "Away"
+msgstr "Nieobecny"
+
+#: src/presence-applet.cpp:169
+msgid "Not Available"
+msgstr "Niedostępny"
+
+#: src/presence-applet.cpp:170
+msgid "Invisible"
+msgstr "Niewidoczny"
+
+#: src/presence-applet.cpp:171
+msgid "Offline"
+msgstr "Niedostępny"
+
+#: src/presence-applet.cpp:172
+msgid "Join Chat Room..."
+msgstr "Dołącz do pokoju rozmowy..."
+
+#: src/presence-applet.cpp:182
+msgid "Account Manager..."
+msgstr "Zarządca konta..."
+
+#: src/presence-applet.cpp:183
+msgid "Contact List..."
+msgstr "Lista kontaktów..."
+
+#: src/presence-applet.cpp:184
+msgid "Add New Contacts..."
+msgstr "Dodaj nowe kontakty..."
+
+#: src/presence-applet.cpp:187
+msgid "Make a Call..."
+msgstr "Zadzwoń..."
+
+#: src/presence-applet.cpp:349
+msgid "Connecting..."
+msgstr "Łączenie..."
+
+#~ msgid ""
+#~ "Seems like you forgot to select an account. Also do not forget to connect "
+#~ "it first."
+#~ msgstr ""
+#~ "Wygląda na to, że zapomniano wybrać konta. Nie zapomnij również podłączyć "
+#~ "się do niego w pierwszej kolejności."
+
+#~ msgid "No Account Selected"
+#~ msgstr "Nie wybrano konta"
+
+#~ msgid ""
+#~ "An error we did not anticipate just happened and so the contact could not "
+#~ "be added. Sorry."
+#~ msgstr ""
+#~ "Właśnie wystąpił błąd, którego się nie spodziewaliśmy, dlatego nie można "
+#~ "dodać konta. Przepraszamy."
+
+#~ msgid "Account Error"
+#~ msgstr "Błąd konta"
+
+#~ msgid "General"
+#~ msgstr "Ogólne"
+
+#~ msgid "On click:"
+#~ msgstr "Przy kliknięciu:"
+
+#~ msgid "Do Nothing"
+#~ msgstr "Nic nie rób"
+
+#~ msgid "Show Account Manager"
+#~ msgstr "Pokaż menadżera kont"
