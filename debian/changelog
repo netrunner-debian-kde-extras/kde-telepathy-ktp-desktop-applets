@@ -3,6 +3,7 @@ ktp-desktop-applets (0.6.80-1) UNRELEASED; urgency=low
   * New upstream release.
   * Fix typo in description (Thanks Pablo D. Pareja Obregón for
     the report)
+  * Bump build-depends libktpcommoninternalsprivate-dev to 0.6.80 
 
  -- Diane Trout <diane@ghic.org>  Sun, 29 Sep 2013 09:07:07 -0700
 
