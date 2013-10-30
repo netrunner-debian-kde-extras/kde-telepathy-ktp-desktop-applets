@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_org.kde.ktp-presence\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-03-27 10:06+0100\n"
+"POT-Creation-Date: 2013-09-24 05:32+0000\n"
 "PO-Revision-Date: 2013-06-28 08:56+0200\n"
 "Last-Translator: xavier <xavier.besnard@neuf.fr>\n"
 "Language-Team: French <kde-i18n-doc@kde.org>\n"
@@ -22,55 +22,59 @@ msgstr ""
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
 
-#: src/presence-applet.cpp:164
+#: src/presence-applet.cpp:184
 msgid "More"
 msgstr "Plus"
 
-#: src/presence-applet.cpp:166
+#: src/presence-applet.cpp:227
 msgid "Online"
 msgstr "Connecté(e)"
 
-#: src/presence-applet.cpp:167
+#: src/presence-applet.cpp:231
 msgid "Busy"
 msgstr "Occupé(e)"
 
-#: src/presence-applet.cpp:168
+#: src/presence-applet.cpp:235
 msgid "Away"
 msgstr "Absent(e)"
 
-#: src/presence-applet.cpp:169
+#: src/presence-applet.cpp:239
 msgid "Not Available"
 msgstr "Indisponible"
 
-#: src/presence-applet.cpp:170
+#: src/presence-applet.cpp:243
 msgid "Invisible"
 msgstr "Invisible"
 
-#: src/presence-applet.cpp:171
+#: src/presence-applet.cpp:247
 msgid "Offline"
 msgstr "Déconnecté(e)"
 
-#: src/presence-applet.cpp:172
+#: src/presence-applet.cpp:258
 msgid "Join Chat Room..."
 msgstr "Rejoindre un forum de discussions..."
 
-#: src/presence-applet.cpp:182
+#: src/presence-applet.cpp:261
 msgid "Account Manager..."
 msgstr "Gestionnaire de comptes..."
 
-#: src/presence-applet.cpp:183
+#: src/presence-applet.cpp:262
 msgid "Contact List..."
 msgstr "Liste de contacts..."
 
-#: src/presence-applet.cpp:184
+#: src/presence-applet.cpp:263
 msgid "Add New Contacts..."
 msgstr "Ajouter de nouveaux contacts..."
 
-#: src/presence-applet.cpp:187
+#: src/presence-applet.cpp:266
 msgid "Make a Call..."
 msgstr "Composer un numéro..."
 
-#: src/presence-applet.cpp:349
+#: src/presence-applet.cpp:270
+msgid "Send a File..."
+msgstr "Envoyer un fichier..."
+
+#: src/presence-applet.cpp:428
 msgid "Connecting..."
 msgstr "Connexion en cours..."
 

@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-03-27 10:06+0100\n"
-"PO-Revision-Date: 2013-03-23 08:25+0100\n"
+"POT-Creation-Date: 2013-09-24 05:32+0000\n"
+"PO-Revision-Date: 2013-09-24 18:55+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@comhem.se>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -17,55 +17,59 @@ msgstr ""
 "X-Generator: Lokalize 1.4\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: src/presence-applet.cpp:164
+#: src/presence-applet.cpp:184
 msgid "More"
 msgstr "Mer"
 
-#: src/presence-applet.cpp:166
+#: src/presence-applet.cpp:227
 msgid "Online"
 msgstr "Uppkopplad"
 
-#: src/presence-applet.cpp:167
+#: src/presence-applet.cpp:231
 msgid "Busy"
 msgstr "Upptagen"
 
-#: src/presence-applet.cpp:168
+#: src/presence-applet.cpp:235
 msgid "Away"
 msgstr "Borta"
 
-#: src/presence-applet.cpp:169
+#: src/presence-applet.cpp:239
 msgid "Not Available"
 msgstr "Inte tillgänglig"
 
-#: src/presence-applet.cpp:170
+#: src/presence-applet.cpp:243
 msgid "Invisible"
 msgstr "Osynlig"
 
-#: src/presence-applet.cpp:171
+#: src/presence-applet.cpp:247
 msgid "Offline"
 msgstr "Nerkopplad"
 
-#: src/presence-applet.cpp:172
+#: src/presence-applet.cpp:258
 msgid "Join Chat Room..."
 msgstr "Gå med i chattrum..."
 
-#: src/presence-applet.cpp:182
+#: src/presence-applet.cpp:261
 msgid "Account Manager..."
 msgstr "Kontohanterare..."
 
-#: src/presence-applet.cpp:183
+#: src/presence-applet.cpp:262
 msgid "Contact List..."
 msgstr "Kontaktlista..."
 
-#: src/presence-applet.cpp:184
+#: src/presence-applet.cpp:263
 msgid "Add New Contacts..."
 msgstr "Lägg till nya kontakter..."
 
-#: src/presence-applet.cpp:187
+#: src/presence-applet.cpp:266
 msgid "Make a Call..."
 msgstr "Ring ett samtal..."
 
-#: src/presence-applet.cpp:349
+#: src/presence-applet.cpp:270
+msgid "Send a File..."
+msgstr "Skicka en fil..."
+
+#: src/presence-applet.cpp:428
 msgid "Connecting..."
 msgstr "Ansluter..."
 

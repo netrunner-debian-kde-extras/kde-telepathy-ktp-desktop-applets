@@ -2,6 +2,7 @@
 Name=Instant Messaging Presence
 Name[bs]=Prisutnost za instant poruke
 Name[ca]=Presència de missatgeria instantània
+Name[ca@valencia]=Presència de missatgeria instantània
 Name[cs]=Widget stavu komunikátoru
 Name[da]=Instant messaging-tilstedeværelse
 Name[de]=Instant-Messenger-Anwesenheit
@@ -19,7 +20,6 @@ Name[lt]=TP matomumas
 Name[mr]=त्वरित संदेश उपस्थिती
 Name[nb]=Tilstede for lynmeldingssystemet
 Name[nl]=Aanwezigheid van Instant Messaging
-Name[pa]=ਤੁਰੰਤ ਸੁਨੇਹਾ ਮੌਜੂਦਗੀ
 Name[pl]=Obecność w komunikatorze internetowym
 Name[pt]=Presença nas Mensagens Instantâneas
 Name[pt_BR]=Presença nas mensagens instantâneas
