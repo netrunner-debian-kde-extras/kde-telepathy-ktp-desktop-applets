@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-03-27 10:06+0100\n"
-"PO-Revision-Date: 2013-03-12 10:18+0100\n"
+"POT-Creation-Date: 2013-09-24 05:32+0000\n"
+"PO-Revision-Date: 2013-04-22 09:40+0200\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -17,54 +17,58 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Lokalize 1.5\n"
 
-#: src/presence-applet.cpp:164
+#: src/presence-applet.cpp:184
 msgid "More"
 msgstr "Více"
 
-#: src/presence-applet.cpp:166
+#: src/presence-applet.cpp:227
 msgid "Online"
 msgstr "Připojen"
 
-#: src/presence-applet.cpp:167
+#: src/presence-applet.cpp:231
 msgid "Busy"
 msgstr "Zaneprázdněn"
 
-#: src/presence-applet.cpp:168
+#: src/presence-applet.cpp:235
 msgid "Away"
 msgstr "Pryč"
 
-#: src/presence-applet.cpp:169
+#: src/presence-applet.cpp:239
 msgid "Not Available"
 msgstr "Nedostupný"
 
-#: src/presence-applet.cpp:170
+#: src/presence-applet.cpp:243
 msgid "Invisible"
 msgstr "Neviditelný"
 
-#: src/presence-applet.cpp:171
+#: src/presence-applet.cpp:247
 msgid "Offline"
 msgstr "Odpojen"
 
-#: src/presence-applet.cpp:172
+#: src/presence-applet.cpp:258
 msgid "Join Chat Room..."
 msgstr "Připojit se do místnosti..."
 
-#: src/presence-applet.cpp:182
+#: src/presence-applet.cpp:261
 msgid "Account Manager..."
 msgstr "Správce účtů..."
 
-#: src/presence-applet.cpp:183
+#: src/presence-applet.cpp:262
 msgid "Contact List..."
 msgstr "Seznam kontaktů..."
 
-#: src/presence-applet.cpp:184
+#: src/presence-applet.cpp:263
 msgid "Add New Contacts..."
 msgstr "Přidat nové kontakty...."
 
-#: src/presence-applet.cpp:187
+#: src/presence-applet.cpp:266
 msgid "Make a Call..."
 msgstr "Zahájit hovor..."
 
-#: src/presence-applet.cpp:349
+#: src/presence-applet.cpp:270
+msgid "Send a File..."
+msgstr "Poslat soubor..."
+
+#: src/presence-applet.cpp:428
 msgid "Connecting..."
 msgstr "Připojuji se..."
