@@ -3,7 +3,8 @@ ktp-desktop-applets (0.7.0-1) UNRELEASED; urgency=low
   * New upstream release.
   * Fix typo in description (Thanks Pablo D. Pareja Obregón for
     the report)
-  * Bump build-depends libktpcommoninternalsprivate-dev to 0.6.80 
+  * Bump build-depends libktpcommoninternalsprivate-dev to 0.7.0
+  * Bump depends kde-telepathy-declarative to 0.7.0
 
  -- Diane Trout <diane@ghic.org>  Tue, 29 Oct 2013 22:18:50 -0700
 
