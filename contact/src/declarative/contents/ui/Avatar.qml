@@ -19,39 +19,23 @@
 
 import QtQuick 1.1
 import org.kde.plasma.graphicswidgets 0.1 as PlasmaWidgets
+import org.kde.draganddrop 1.0 as DnD
 
 Item {
     id: container;
 
-    // eliminate once finished. This is only a test image
-    property string avatarPath: "";
-    property string avatarPresenceStatus;
-
     signal clicked();
-
-    anchors.fill: parent;
-
-    Component.onCompleted: {
-        setAvatarPresenceStatus(avatarPresenceStatus);
-    }
 
     // TODO: use image instead of iconwidget?
     PlasmaWidgets.IconWidget {
         id: avatar;
         anchors.fill: parent;
         anchors.margins: 10;
+        icon: QIcon(TelepathyContact.avatar);
 
         onClicked: {
             // toggleMenu
             container.clicked();
-        }
-
-        Component.onCompleted: {
-            if (avatarPath == "") {
-                avatar.icon = QIcon("im-user");
-            } else {
-                avatar.icon = QIcon(avatarPath);
-            }
         }
     }
 
@@ -59,50 +43,32 @@ Item {
         id: avatarFrame;
         width: 128;
         height: 128;
+        source: getFrameForAvatarPresence(TelepathyContact.presenceStatus)
     }
 
-    // show drop-down action menu
-    function showMenu()
-    {
-        console.log("SHOW MENU");
-    }
-
-    function setAvatarPresenceStatus(presenceStatus)
-    {
-        switch (presenceStatus) {
-            case "available":
-                avatarFrame.source = "../frames/online.png";
-                break;
-            case "dnd":
-                avatarFrame.source = "../frames/busy.png";
-                break;
-            case "away":
-                avatarFrame.source = "../frames/away.png";
-                break;
-            case "offline":
-                avatarFrame.source = "../frames/offline.png";
-                break;
-            default:
-                avatarFrame.source = "../frames/offline.png";
-                break;
+    DnD.DropArea {
+        id: dropArea
+        anchors.fill: parent
+        enabled: TelepathyContact.canSendFile
+        onDrop: {
+            if (event.mimeData.url!="") {
+                TelepathyContact.startFileTransfer(event.mimeData.urls)
+            }
         }
     }
 
-    // updates avatar info with info from contact currently set
-    function update()
+    function getFrameForAvatarPresence(presenceStatus)
     {
-        avatar.icon = QIcon(TelepathyContact.avatar);
-    }
-
-    function accountPresenceChanged()
-    {
-        // check if user account is online
-        if (!TelepathyContact.accountOnline && avatar.enabled) {
-            setAvatarPresenceStatus("offline");
-        } else if (TelepathyContact.accountOnline && !avatar.enabled) {
-            // set back to normal
-            avatarPresenceStatus = TelepathyContact.presenceStatus;
-            setAvatarPresenceStatus(avatarPresenceStatus);
+        switch (presenceStatus) {
+            case "available":
+                return "../frames/online.png";
+            case "dnd":
+                return "../frames/busy.png";
+            case "away":
+                return "../frames/away.png";
+            default:
+            case "offline":
+                return "../frames/offline.png";
         }
     }
 }

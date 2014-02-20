@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_ktp_presence\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-09-24 05:32+0000\n"
-"PO-Revision-Date: 2013-04-24 01:46+0300\n"
+"POT-Creation-Date: 2013-08-23 01:31+0000\n"
+"PO-Revision-Date: 2013-12-22 13:54+0200\n"
 "Last-Translator: Lasse Liehu <lasse.liehu@gmail.com>\n"
 "Language-Team: Finnish <lokalisointi@lists.coss.fi>\n"
 "Language: fi\n"
@@ -52,31 +52,31 @@ msgstr "Poissa"
 
 #: src/presence-applet.cpp:258
 msgid "Join Chat Room..."
-msgstr "Liity keskusteluhuoneeseen..."
+msgstr "Liity keskusteluhuoneeseen…"
 
 #: src/presence-applet.cpp:261
 msgid "Account Manager..."
-msgstr "Tilinhallinta..."
+msgstr "Tilinhallinta…"
 
 #: src/presence-applet.cpp:262
 msgid "Contact List..."
-msgstr "Yhteystietoluettelo..."
+msgstr "Yhteystietoluettelo…"
 
 #: src/presence-applet.cpp:263
 msgid "Add New Contacts..."
-msgstr "Lisää uusia yhteystietoja..."
+msgstr "Lisää uusia yhteystietoja…"
 
 #: src/presence-applet.cpp:266
 msgid "Make a Call..."
-msgstr "Soita..."
+msgstr "Soita…"
 
 #: src/presence-applet.cpp:270
 msgid "Send a File..."
-msgstr "Lähetä tiedosto..."
+msgstr "Lähetä tiedosto…"
 
 #: src/presence-applet.cpp:428
 msgid "Connecting..."
-msgstr "Yhdistetään..."
+msgstr "Yhdistetään…"
 
 #~ msgid "No Account Selected"
 #~ msgstr "Tiliä ei ole valittu"

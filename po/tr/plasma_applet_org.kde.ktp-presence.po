@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-09-24 05:32+0000\n"
+"POT-Creation-Date: 2013-08-23 01:31+0000\n"
 "PO-Revision-Date: 2013-07-08 03:53+0200\n"
 "Last-Translator: Volkan Gezer <volkangezer@gmail.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -68,7 +68,7 @@ msgstr "Bir Arama Yap..."
 
 #: src/presence-applet.cpp:270
 msgid "Send a File..."
-msgstr ""
+msgstr "Bir Dosya Gönder..."
 
 #: src/presence-applet.cpp:428
 msgid "Connecting..."

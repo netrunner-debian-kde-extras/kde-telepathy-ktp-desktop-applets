@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktp-presence-applet\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-09-24 05:32+0000\n"
+"POT-Creation-Date: 2013-08-23 01:31+0000\n"
 "PO-Revision-Date: 2011-12-28 12:28-0500\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
@@ -47,6 +47,7 @@ msgstr "As Líne"
 
 #: src/presence-applet.cpp:258
 #, fuzzy
+#| msgid "Join Chat Room"
 msgid "Join Chat Room..."
 msgstr "Glac Páirt i gComhrá"
 

@@ -19,9 +19,12 @@
 
 #include "contact-wrapper.h"
 
+#include <KFileDialog>
+#include <KLocalizedString>
 #include <KToolInvocation>
 #include <KUrl>
 #include <KDebug>
+
 #include <KTp/actions.h>
 
 #include <TelepathyQt/AvatarData>
@@ -68,32 +71,25 @@ QString ContactWrapper::avatar() const
 
 bool ContactWrapper::canSendFile() const
 {
-    if (m_contact && m_account) {
-        return (m_contact->capabilities().fileTransfers() && m_account->capabilities().fileTransfers());
-    } else {
-        return false;
-    }
+    return m_contact && m_contact->fileTransferCapability();
+}
+
+bool ContactWrapper::canStartTextChat() const
+{
+    return m_contact && m_contact->textChatCapability();
 }
 
 bool ContactWrapper::canStartAudioCall() const
 {
-    if (m_contact && m_account) {
-        return (m_contact->capabilities().streamedMediaAudioCalls() && m_account->capabilities().streamedMediaAudioCalls());
-    } else {
-        return false;
-    }
+    return m_contact && m_contact->audioCallCapability();
 }
 
-bool ContactWrapper::canStartVideo() const
+bool ContactWrapper::canStartVideoCall() const
 {
-    if (m_contact && m_account) {
-        return (m_contact->capabilities().streamedMediaVideoCalls() && m_account->capabilities().streamedMediaVideoCalls());
-    } else {
-        return false;
-    }
+    return m_contact && m_contact->videoCallCapability();
 }
 
-Tp::ContactPtr ContactWrapper::contact() const
+KTp::ContactPtr ContactWrapper::contact() const
 {
     return m_contact;
 }
@@ -125,10 +121,13 @@ void ContactWrapper::genericOperationFinished(Tp::PendingOperation* op)
 
 bool ContactWrapper::isAccountOnline() const
 {
-    if (m_account) {
-        if (m_account->currentPresence().type() != Tp::Presence::offline().type()) {
-            return true;
-        }
+    return m_account && m_account->currentPresence().type() != Tp::Presence::offline().type();
+}
+
+bool ContactWrapper::isContactOnline() const
+{
+    if (m_contact && isAccountOnline()) {
+        return m_contact->presence().type() != Tp::Presence::offline().type();
     }
 
     return false;
@@ -156,26 +155,59 @@ void ContactWrapper::onContactManagerStateChanged(Tp::ContactListState newState)
     }
 }
 
+void ContactWrapper::updateProperties()
+{
+    emit accountOnlineChanged();
+
+    emit presenceStatusChanged();
+    emit contactOnlineChanged();
+
+    emit avatarChanged();
+
+    emit canSendFileChanged();
+    emit canStartTextChatChanged();
+    emit canStartAudioCallChanged();
+    emit canStartVideoCallChanged();
+
+    emit displayNameChanged();
+}
+
 QString ContactWrapper::presenceStatus() const
 {
-    if (m_contact) {
+    if (m_contact && isAccountOnline()) {
         return m_contact->presence().status();
     } else {
         return QString();
     }
 }
 
-void ContactWrapper::setupAccountConnects()
+void ContactWrapper::connectAccountSignals()
 {
     // keep track of presence (online/offline is all we need)
     connect(m_account.data(), SIGNAL(connectionChanged(Tp::ConnectionPtr)), this, SLOT(onConnectionChanged(Tp::ConnectionPtr)));
-    connect(m_account.data(), SIGNAL(currentPresenceChanged(Tp::Presence)), this, SIGNAL(accountPresenceChanged()));
+    connect(m_account.data(), SIGNAL(currentPresenceChanged(Tp::Presence)), this, SLOT(updateProperties()));
 }
 
-void ContactWrapper::setupContactConnects()
+void ContactWrapper::connectContactSignals()
 {
     connect(m_contact.data(), SIGNAL(avatarDataChanged(Tp::AvatarData)), this, SIGNAL(avatarChanged()));
-    connect(m_contact.data(), SIGNAL(presenceChanged(Tp::Presence)), this, SIGNAL(presenceChanged()));
+    connect(m_contact.data(), SIGNAL(presenceChanged(Tp::Presence)), this, SLOT(updateProperties()));
+}
+
+void ContactWrapper::disconnectAccountSignals()
+{
+    if (m_account) {
+        disconnect(m_account.data(), SIGNAL(connectionChanged(Tp::ConnectionPtr)), this, SLOT(onConnectionChanged(Tp::ConnectionPtr)));
+        disconnect(m_account.data(), SIGNAL(currentPresenceChanged(Tp::Presence)), this, SLOT(updateProperties()));
+    }
+}
+
+void ContactWrapper::disconnectContactSignals()
+{
+    if (m_contact) {
+        disconnect(m_contact.data(), SIGNAL(avatarDataChanged(Tp::AvatarData)), this, SIGNAL(avatarChanged()));
+        disconnect(m_contact.data(), SIGNAL(presenceChanged(Tp::Presence)), this, SLOT(updateProperties()));
+    }
 }
 
 void ContactWrapper::sendMail()
@@ -187,37 +219,74 @@ void ContactWrapper::sendMail()
     KToolInvocation::invokeMailer(KUrl(m_contact->id()));
 }
 
-void ContactWrapper::startAudioCall()
-{
-    kDebug();
-}
-
-void ContactWrapper::startFileTransfer()
-{
-    kDebug();
-}
-
 void ContactWrapper::startTextChat()
 {
     if (!m_account || !m_contact) {
         return;
     }
 
-    Tp::PendingChannelRequest* channelRequest = KTp::Actions::startChat(m_account, m_contact);
+    Tp::PendingChannelRequest *channelRequest = KTp::Actions::startChat(m_account, m_contact);
+    connect(channelRequest, SIGNAL(finished(Tp::PendingOperation*)), this, SLOT(genericOperationFinished(Tp::PendingOperation*)));
+}
+
+void ContactWrapper::startAudioCall()
+{
+    if (!m_account || !m_contact) {
+        return;
+    }
+
+    Tp::PendingChannelRequest *channelRequest = KTp::Actions::startAudioCall(m_account, m_contact);
     connect(channelRequest, SIGNAL(finished(Tp::PendingOperation*)), this, SLOT(genericOperationFinished(Tp::PendingOperation*)));
 }
 
 void ContactWrapper::startVideoCall()
 {
-    kDebug();
+    if (!m_account || !m_contact) {
+        return;
+    }
+
+    Tp::PendingChannelRequest *channelRequest = KTp::Actions::startAudioVideoCall(m_account, m_contact);
+    connect(channelRequest, SIGNAL(finished(Tp::PendingOperation*)), this, SLOT(genericOperationFinished(Tp::PendingOperation*)));
+}
+
+void ContactWrapper::startFileTransfer()
+{
+    if (!canSendFile()) {
+        return;
+    }
+
+    QStringList filenames = KFileDialog::getOpenFileNames(KUrl("kfiledialog:///FileTransferLastDirectory"),
+                                                          QString(),
+                                                          0,
+                                                          i18n("Choose files to send to %1", m_contact->alias()));
+
+    Q_FOREACH (const QString &filename, filenames) {
+        Tp::PendingOperation *channelRequest = KTp::Actions::startFileTransfer(m_account, m_contact, filename);
+        connect(channelRequest, SIGNAL(finished(Tp::PendingOperation*)), this, SLOT(genericOperationFinished(Tp::PendingOperation*)));
+    }
+}
+
+void ContactWrapper::startFileTransfer(const QVariantList &urls)
+{
+    if (!canSendFile()) {
+        return;
+    }
+
+    Q_FOREACH (const QVariant &urlVariant, urls) {
+        if (urlVariant.toUrl().isLocalFile()) {
+            Tp::PendingOperation *channelRequest = KTp::Actions::startFileTransfer(m_account, m_contact, urlVariant.toUrl());
+            connect(channelRequest, SIGNAL(finished(Tp::PendingOperation*)), this, SLOT(genericOperationFinished(Tp::PendingOperation*)));
+        }
+    }
 }
 
 void ContactWrapper::setAccount(const Tp::AccountPtr& relatedAccount)
 {
-    kDebug() << "setting account to: " << relatedAccount->displayName();
-    undoAccountConnects();
+    disconnectAccountSignals();
     m_account = relatedAccount;
-    setupAccountConnects();
+    connectAccountSignals();
+
+    updateProperties();
 }
 
 void ContactWrapper::setContact(const Tp::ContactPtr& newContact)
@@ -225,14 +294,16 @@ void ContactWrapper::setContact(const Tp::ContactPtr& newContact)
     kDebug() << "setting new contact to: " << newContact->id();
 
     // disconnect signals
-    undoContactConnects();
-    m_contact = newContact;
+    disconnectContactSignals();
+    m_contact = KTp::ContactPtr::qObjectCast(newContact);
 
     // establish new signals
-    setupContactConnects();
+    connectContactSignals();
 
     // tell QML we have a new contact
-    emit(newContactSet());
+    emit contactChanged();
+
+    updateProperties();
 }
 
 void ContactWrapper::setTempAvatar(const QString& path)
@@ -247,18 +318,3 @@ void ContactWrapper::setTempContactId(const QString& tempId)
 {
     m_tempContactId = tempId;
 }
-
-void ContactWrapper::undoAccountConnects()
-{
-    if (m_account) {
-        disconnect(m_account.data(), 0, 0, 0);
-    }
-}
-
-void ContactWrapper::undoContactConnects()
-{
-    if (m_contact) {
-        disconnect(m_contact.data(), 0, 0, 0);
-    }
-}
-

@@ -1,12 +1,12 @@
 # Translation of plasma_applet_org.kde.ktp-contact to Norwegian Bokmål
 #
-# Bjørn Steensrud <bjornst@skogkatt.homelinux.org>, 2012, 2013.
+# Bjørn Steensrud <bjornst@skogkatt.homelinux.org>, 2012, 2013, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-03-27 10:06+0100\n"
-"PO-Revision-Date: 2013-09-18 13:05+0200\n"
+"POT-Creation-Date: 2013-12-06 01:35+0000\n"
+"PO-Revision-Date: 2014-01-13 18:56+0100\n"
 "Last-Translator: Bjørn Steensrud <bjornst@skogkatt.homelinux.org>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: nb\n"
@@ -27,6 +27,7 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "bjornst@skogkatt.homelinux.org"
 
-#: src/applet_config.cpp:37
-msgid "Select a contact"
-msgstr "Velg en kontakt"
+#: src/contact-wrapper.cpp:261
+#, kde-format
+msgid "Choose files to send to %1"
+msgstr "Velg filer som skal sendes til %1"
