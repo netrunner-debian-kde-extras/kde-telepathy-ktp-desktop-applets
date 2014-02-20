@@ -1,80 +1,74 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Xosé <xosecalvo@gmail.com>, 2012.
-# Adrian Chaves Fernandez <adriyetichaves@gmail.com>, 2012.
-# Miguel Branco <mgl.branco@gmail.com>, 2013.
-# Marce Villarino <mvillarino@kde-espana.es>, 2013.
+# A S Alam <aalam@users.sf.net>, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2013-08-23 01:31+0000\n"
-"PO-Revision-Date: 2013-08-01 21:14+0200\n"
-"Last-Translator: Marce Villarino <mvillarino@kde-espana.org>\n"
-"Language-Team: Galician <proxecto@trasno.net>\n"
-"Language: gl\n"
+"PO-Revision-Date: 2013-05-04 22:34+0530\n"
+"Last-Translator: A S Alam <aalam@users.sf.net>\n"
+"Language-Team: Punjabi/Panjabi <punjabi-users@lists.sf.net>\n"
+"Language: pa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.5\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Environment: kde\n"
-"X-Accelerator-Marker: &\n"
-"X-Text-Markup: kde4\n"
+"X-Generator: Lokalize 1.5\n"
 
 #: src/presence-applet.cpp:184
 msgid "More"
-msgstr "Máis"
+msgstr "ਹੋਰ"
 
 #: src/presence-applet.cpp:227
 msgid "Online"
-msgstr "Conectado"
+msgstr "ਆਨਲਾਈਨ"
 
 #: src/presence-applet.cpp:231
 msgid "Busy"
-msgstr "Ocupado"
+msgstr "ਰੁਝੇ"
 
 #: src/presence-applet.cpp:235
 msgid "Away"
-msgstr "Ausente"
+msgstr "ਦੂਰ"
 
 #: src/presence-applet.cpp:239
 msgid "Not Available"
-msgstr "Non dispoñíbel"
+msgstr "ਉਪਲੱਬਧ ਨਹੀਂ"
 
 #: src/presence-applet.cpp:243
 msgid "Invisible"
-msgstr "Invisíbel"
+msgstr "ਅਦਿੱਖ"
 
 #: src/presence-applet.cpp:247
 msgid "Offline"
-msgstr "Desconectado"
+msgstr "ਆਫਲਾਈਨ"
 
 #: src/presence-applet.cpp:258
 msgid "Join Chat Room..."
-msgstr "Unirse a unha sala de conversa..."
+msgstr "...ਗੱਲਬਾਤ ਰੂਮ ਜੁਆਇੰਨ"
 
 #: src/presence-applet.cpp:261
 msgid "Account Manager..."
-msgstr "Xestor de contas..."
+msgstr "...ਅਕਾਊਂਟ ਮੈਨੇਜਰ"
 
 #: src/presence-applet.cpp:262
 msgid "Contact List..."
-msgstr "Lista de contactos..."
+msgstr "...ਸੰਪਰਕ ਲਿਸਟ"
 
 #: src/presence-applet.cpp:263
 msgid "Add New Contacts..."
-msgstr "Engadir contactos novos..."
+msgstr "...ਨਵੇਂ ਸੰਪਰਕ ਸ਼ਾਮਿਲ"
 
 #: src/presence-applet.cpp:266
 msgid "Make a Call..."
-msgstr "Facer unha chamada..."
+msgstr "...ਕਾਲ ਕਰੋ"
 
 #: src/presence-applet.cpp:270
 msgid "Send a File..."
-msgstr "Enviar un ficheiro…"
+msgstr "...ਫਾਇਲ ਭੇਜੋ"
 
 #: src/presence-applet.cpp:428
 msgid "Connecting..."
-msgstr "Conectándose..."
+msgstr "...ਕੁਨੈਕਟ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"

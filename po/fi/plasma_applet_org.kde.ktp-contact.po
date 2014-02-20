@@ -1,15 +1,16 @@
 # Copyright © 2012 This_file_is_part_of_KDE
 # This file is distributed under the same license as the ktp-contact-applet package.
 # Tommi Nieminen <translator@legisign.org>, 2012.
+# Lasse Liehu <lasse.liehu@gmail.com>, 2013.
 #
 # KDE 4.9 Finnish translation sprint 2012-06/07
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_ktp_contact\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-09-24 05:32+0000\n"
-"PO-Revision-Date: 2012-04-16 17:54+0300\n"
-"Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
+"POT-Creation-Date: 2013-12-06 01:35+0000\n"
+"PO-Revision-Date: 2013-12-12 23:05+0200\n"
+"Last-Translator: Lasse Liehu <lasse.liehu@gmail.com>\n"
 "Language-Team: Finnish <lokalisointi@lists.coss.fi>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-POT-Import-Date: 2012-06-15 07:12:07+0000\n"
-"X-Generator: MediaWiki 1.20alpha (r113129); Translate 2012-07-04\n"
+"X-Generator: Lokalize 1.5\n"
 
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
@@ -26,6 +27,11 @@ msgstr "Tommi Nieminen"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "translator@legisign.org"
+
+#: src/contact-wrapper.cpp:261
+#, kde-format
+msgid "Choose files to send to %1"
+msgstr "Valitse käyttäjälle %1 lähetettävät tiedostot"
 
 #~ msgid "Select a contact"
 #~ msgstr "Valitse yhteystieto"
