@@ -1,14 +1,14 @@
-# Translation of plasma_applet_org.kde.ktp-contact.po to Brazilian Portuguese
 # Copyright (C) 2013 This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
+# Translation of plasma_applet_org.kde.ktp-contact.po to Brazilian Portuguese
 #
 # André Marcelo Alvarenga <alvarenga@kde.org>, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_org.kde.ktp-contact\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-12-06 01:35+0000\n"
-"PO-Revision-Date: 2013-11-30 11:12-0200\n"
+"POT-Creation-Date: 2013-09-24 05:32+0000\n"
+"PO-Revision-Date: 2013-01-17 10:38-0200\n"
 "Last-Translator: André Marcelo Alvarenga <alvarenga@kde.org>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_br@kde.org>\n"
 "Language: pt_BR\n"
@@ -26,7 +26,28 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "alvarenga@kde.org"
 
-#: src/contact-wrapper.cpp:261
-#, kde-format
-msgid "Choose files to send to %1"
-msgstr "Escolha os arquivos a enviar para %1"
+#~ msgid "Select a contact"
+#~ msgstr "Selecione um contato"
+
+#~ msgctxt "This is an IM user status"
+#~ msgid "Online"
+#~ msgstr "Conectado"
+
+#~ msgctxt "This is an IM user status"
+#~ msgid "Away"
+#~ msgstr "Ausente"
+
+#~ msgctxt "This is an IM user status"
+#~ msgid "Busy"
+#~ msgstr "Ocupado"
+
+#~ msgctxt "This is an IM user status"
+#~ msgid "Invisible"
+#~ msgstr "Invisível"
+
+#~ msgctxt "This is an IM user status"
+#~ msgid "Offline"
+#~ msgstr "Desconectado"
+
+#~ msgid "User is blocked"
+#~ msgstr "O usuário está bloqueado"

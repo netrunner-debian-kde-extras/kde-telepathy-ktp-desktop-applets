@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_org.kde.telepathy-presence\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-08-23 01:31+0000\n"
+"POT-Creation-Date: 2013-09-24 05:32+0000\n"
 "PO-Revision-Date: 2011-11-29 21:50+0100\n"
 "Last-Translator: Manfred Wiese <m.j.wiese@web.de>\n"
 "Language-Team: Low Saxon <kde-i18n-nds@kde.org>\n"
@@ -51,19 +51,16 @@ msgstr ""
 
 #: src/presence-applet.cpp:261
 #, fuzzy
-#| msgid "Account Manager"
 msgid "Account Manager..."
 msgstr "Kontopleger"
 
 #: src/presence-applet.cpp:262
 #, fuzzy
-#| msgid "Contact list"
 msgid "Contact List..."
 msgstr "Kontaktenlist"
 
 #: src/presence-applet.cpp:263
 #, fuzzy
-#| msgid "Contact list"
 msgid "Add New Contacts..."
 msgstr "Kontaktenlist"
 

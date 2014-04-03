@@ -2,13 +2,12 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Volkan, 2013.
-# Volkan Gezer <volkangezer@gmail.com>, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-12-06 01:35+0000\n"
-"PO-Revision-Date: 2014-01-20 18:42+0100\n"
+"POT-Creation-Date: 2013-09-24 05:32+0000\n"
+"PO-Revision-Date: 2013-03-03 04:36+0100\n"
 "Last-Translator: Volkan Gezer <volkangezer@gmail.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -25,11 +24,6 @@ msgstr "Volkan Gezer"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "volkangezer@gmail.com"
-
-#: src/contact-wrapper.cpp:261
-#, kde-format
-msgid "Choose files to send to %1"
-msgstr "%1 kişisine gönderilecek dosyaları seçin"
 
 #~ msgid "Select a contact"
 #~ msgstr "Bir kişi seçin"
