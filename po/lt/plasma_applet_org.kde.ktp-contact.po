@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-12-06 01:35+0000\n"
+"POT-Creation-Date: 2013-09-24 05:32+0000\n"
 "PO-Revision-Date: 2012-01-02 14:28+0300\n"
 "Last-Translator: Andrius Štikonas <stikonas@gmail.com>\n"
 "Language-Team: none\n"
@@ -26,10 +26,28 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "stikonas@gmail.com"
 
-#: src/contact-wrapper.cpp:261
-#, kde-format
-msgid "Choose files to send to %1"
-msgstr ""
-
 #~ msgid "Select a contact"
 #~ msgstr "Pasirinkite kontaktą"
+
+#~ msgctxt "This is an IM user status"
+#~ msgid "Online"
+#~ msgstr "Prisijungęs (-usi)"
+
+#~ msgctxt "This is an IM user status"
+#~ msgid "Away"
+#~ msgstr "Pasitraukęs (-usi)"
+
+#~ msgctxt "This is an IM user status"
+#~ msgid "Busy"
+#~ msgstr "Užimtas (-a)"
+
+#~ msgctxt "This is an IM user status"
+#~ msgid "Invisible"
+#~ msgstr "Nematomas (-a)"
+
+#~ msgctxt "This is an IM user status"
+#~ msgid "Offline"
+#~ msgstr "Atsijungęs (-usi)"
+
+#~ msgid "User is blocked"
+#~ msgstr "Naudotojas užblokuotas"
