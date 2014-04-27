@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2013-09-24 05:32+0000\n"
-"PO-Revision-Date: 2014-02-03 15:19+0100\n"
+"PO-Revision-Date: 2014-04-08 17:29+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -56,7 +56,7 @@ msgstr "Zarządca konta..."
 
 #: src/presence-applet.cpp:262
 msgid "Contact List..."
-msgstr "Lista kontaktów..."
+msgstr "Wykaz kontaktów..."
 
 #: src/presence-applet.cpp:263
 msgid "Add New Contacts..."

@@ -1,7 +1,7 @@
 # Copyright © 2012 This_file_is_part_of_KDE
 # This file is distributed under the same license as the ktp-presence-applet package.
 # Tommi Nieminen <translator@legisign.org>, 2012.
-# Lasse Liehu <lasse.liehu@gmail.com>, 2013.
+# Lasse Liehu <lasse.liehu@gmail.com>, 2013, 2014.
 #
 # KDE 4.9 Finnish translation sprint 2012-06/07
 # Author: Artnay

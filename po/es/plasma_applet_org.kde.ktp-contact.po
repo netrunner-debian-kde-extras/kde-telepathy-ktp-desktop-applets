@@ -3,13 +3,14 @@
 #
 # Kira J. Fernández <kirajfdez@gmail.com>, 2011.
 # Raul Gonzalez <raulgf83@gmail.com>, 2013.
+# Eloy Cuadra <ecuadra@eloihr.net>, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-09-24 05:32+0000\n"
-"PO-Revision-Date: 2013-12-09 22:35+0100\n"
-"Last-Translator: Raul Gonzalez <raulgf83@gmail.com>\n"
+"POT-Creation-Date: 2014-03-12 05:55+0000\n"
+"PO-Revision-Date: 2014-03-26 16:35+0100\n"
+"Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -25,6 +26,11 @@ msgstr "Raúl G.F.,Kira J. Fernández"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "raulgf83@gmail.com,kirajfdez@gmail.com"
+
+#: src/contact-wrapper.cpp:261
+#, kde-format
+msgid "Choose files to send to %1"
+msgstr "Seleccione los archivos a enviar a %1"
 
 #~ msgid "Select a contact"
 #~ msgstr "Seleccione un contacto"

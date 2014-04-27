@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_org.kde.ktp-contact\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-09-24 05:32+0000\n"
-"PO-Revision-Date: 2013-01-21 10:10+0100\n"
+"POT-Creation-Date: 2014-03-12 05:55+0000\n"
+"PO-Revision-Date: 2013-12-07 12:45+0100\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
 "Language: sr@latin\n"
@@ -25,3 +25,9 @@ msgstr "Časlav Ilić"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "caslav.ilic@gmx.net"
+
+# >> @title:window
+#: src/contact-wrapper.cpp:261
+#, kde-format
+msgid "Choose files to send to %1"
+msgstr "Izbor fajlova za slanje %1"
