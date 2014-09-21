@@ -32,6 +32,7 @@
 
 namespace KTp {
     class GlobalPresence;
+    class PresenceModel;
 }
 
 namespace Tp {
@@ -68,7 +69,7 @@ private Q_SLOTS:
     void toolTipAboutToShow();
     void toolTipHidden();
 
-    void startAccountManager();
+    void showSettingsKCM();
     void toggleContactList();
     void onAddContactRequest();
     void onMakeCallRequest();
@@ -98,8 +99,7 @@ private:
     QDBusServiceWatcher  *m_contactListWatcher;
     bool                  m_contactListRunning;
 
-    void addPresence(const KTp::Presence &presence);
-    QList<KTp::Presence> m_presences;
+    KTp::PresenceModel *m_presences;
 };
 
 #endif  // KTP_PRESENCE_APPLET_H
