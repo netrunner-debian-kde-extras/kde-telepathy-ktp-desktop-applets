@@ -34,8 +34,10 @@
 
 #include <KTp/actions.h>
 #include <KTp/global-presence.h>
+#include <KTp/Models/presence-model.h>
 #include <KTp/Widgets/add-contact-dialog.h>
 #include <KTp/Widgets/join-chat-room-dialog.h>
+#include <KTp/Widgets/settings-kcm-dialog.h>
 
 #include <Plasma/ToolTipManager>
 #include <Plasma/Svg>
@@ -50,7 +52,8 @@ int TelepathyPresenceApplet::s_instanceCount = 0;
 
 TelepathyPresenceApplet::TelepathyPresenceApplet(QObject *parent, const QVariantList &args)
     : Plasma::Applet(parent, args),
-      m_globalPresence(new KTp::GlobalPresence(this))
+      m_globalPresence(new KTp::GlobalPresence(this)),
+      m_presences(new KTp::PresenceModel(this))
 {
     s_instanceCount ++;
     setupContextMenuActions();
@@ -85,8 +88,8 @@ TelepathyPresenceApplet::TelepathyPresenceApplet(QObject *parent, const QVariant
         setMinimumSize(QSize(iconSize, iconSize));
     }
 
-    connect(m_globalPresence, SIGNAL(currentPresenceChanged(KTp::Presence)), SLOT(onPresenceChanged(KTp::Presence)));
-    onPresenceChanged(m_globalPresence->currentPresence());
+    connect(m_globalPresence, SIGNAL(requestedPresenceChanged(KTp::Presence)), SLOT(onPresenceChanged(KTp::Presence)));
+    onPresenceChanged(m_globalPresence->requestedPresence());
 
     connect(m_globalPresence, SIGNAL(connectionStatusChanged(Tp::ConnectionStatus)), SLOT(onConnectionStatusChanged(Tp::ConnectionStatus)));
     onConnectionStatusChanged(m_globalPresence->connectionStatus());
@@ -161,104 +164,34 @@ KIcon TelepathyPresenceApplet::getThemedIcon(const QString &iconBaseName) const
 }
 
 int TelepathyPresenceApplet::handleCustomPresenceChange() {
+    m_presences->loadPresences();
     setupContextMenuActions();
     return 0;
-}
-
-void TelepathyPresenceApplet::addPresence(const KTp::Presence &presence)
-{
-    if(m_presences.contains(presence)) {
-        return;
-    }
-
-    //Add presence to correct place in list, sorted by presence type
-    QList<KTp::Presence>::iterator i = qLowerBound(m_presences.begin(), m_presences.end(), KTp::Presence(presence));
-    m_presences.insert(i, presence);
 }
 
 void TelepathyPresenceApplet::setupContextMenuActions()
 {
     m_contextActions.clear();
-    m_presences.clear();
 
     KActionMenu *moreMenu = new KActionMenu(i18n("More"), this);
 
-    KSharedConfigPtr config = KSharedConfig::openConfig("ktelepathyrc");
-    KConfigGroup m_presenceGroup = config->group("Custom Presence List");
-
-    //add default presences
-    addPresence(Tp::Presence::available());
-    addPresence(Tp::Presence::busy());
-    addPresence(Tp::Presence::away());
-    addPresence(Tp::Presence::xa());
-    addPresence(Tp::Presence::hidden());
-    addPresence(Tp::Presence::offline());
-
-    //add custom presences
-    Q_FOREACH(const QString &key, m_presenceGroup.keyList()) {
-        QVariantList entry = m_presenceGroup.readEntry(key, QVariantList());
-
-        if(entry.size()!=2)
-          continue;
-
-        QString statusMessage = entry.last().toString();
-
-        switch (entry.first().toInt()) {
-            case Tp::ConnectionPresenceTypeAvailable:
-                addPresence(Tp::Presence::available(statusMessage));
-                break;
-            case Tp::ConnectionPresenceTypeAway:
-                addPresence(Tp::Presence::away(statusMessage));
-                break;
-            case Tp::ConnectionPresenceTypeBusy:
-                addPresence(Tp::Presence::busy(statusMessage));
-                break;
-            case Tp::ConnectionPresenceTypeExtendedAway:
-                addPresence(Tp::Presence::xa(statusMessage));
-        }
-    }
-
     //This loops through the all presences and creates a menu, connects to slot and appends it to the context menu
-    Q_FOREACH(const KTp::Presence &presence, m_presences) {
-        KAction *action;
-        QString menuentry, icon;
-        switch (presence.type()) {
-            case Tp::ConnectionPresenceTypeAvailable:
-                menuentry = (presence.statusMessage()=="") ? i18n("Online") : presence.statusMessage();
-                icon = "user-online";
-                break;
-            case Tp::ConnectionPresenceTypeBusy:
-                menuentry = (presence.statusMessage()=="") ? i18n("Busy") : presence.statusMessage();
-                icon = "user-busy";
-                break;
-            case Tp::ConnectionPresenceTypeAway:
-                menuentry = (presence.statusMessage()=="") ? i18n("Away") : presence.statusMessage();
-                icon = "user-away";
-                break;
-            case Tp::ConnectionPresenceTypeExtendedAway:
-                menuentry = (presence.statusMessage()=="") ? i18n("Not Available") : presence.statusMessage();
-                icon = "user-away-extended";
-                break;
-            case Tp::ConnectionPresenceTypeHidden:
-                menuentry = (presence.statusMessage()=="") ? i18n("Invisible") : presence.statusMessage();
-                icon = "user-invisible";
-                break;
-            case Tp::ConnectionPresenceTypeOffline:
-                menuentry = (presence.statusMessage()=="") ? i18n("Offline") : presence.statusMessage();
-                icon = "user-offline";
-                break;
-            default: continue;
+    for (int i = 0; i < m_presences->rowCount(); i++) {
+        KTp::Presence presence = m_presences->data(i).value<KTp::Presence>();
+        QString menuentry = m_presences->index(i, 0).data(Qt::DisplayRole).toString();
+        if (menuentry.size() > 60) {
+            menuentry =  menuentry.left(60).append("...");
         }
-        action = new KAction(getThemedIcon(icon), menuentry, this);
+        KAction* action = new KAction(getThemedIcon(presence.iconName(false)), menuentry, this);
         action->setData(QVariant::fromValue(presence));
         connect(action, SIGNAL(triggered()), this, SLOT(onPresenceActionClicked()));
         m_contextActions.append(action);
     }
 
-    KAction *joinChatroomAction = new KAction(KIcon("user-group-new"), i18n("Join Chat Room..."), this);
+    KAction *joinChatroomAction = new KAction(KIcon("im-irc"), i18n("Join Chat Room..."), this);
 
     // application actions
-    KAction *showAccountManagerAction = new KAction(KIcon("telepathy-kde"), i18n("Account Manager..."), this);
+    KAction *showSettingsKCMAction = new KAction(KIcon("telepathy-kde"), i18n("Instant Messaging Settings..."), this);
     KAction *showContactListAction = new KAction(KIcon("meeting-attending"), i18n("Contact List..."), this);
     KAction *addContactAction = new KAction(KIcon("list-add-user"), i18n("Add New Contacts..."), this);
     KAction *makeCallAction = 0;
@@ -271,7 +204,7 @@ void TelepathyPresenceApplet::setupContextMenuActions()
     }
 
     // connect actions
-    connect(showAccountManagerAction, SIGNAL(triggered()), this, SLOT(startAccountManager()));
+    connect(showSettingsKCMAction, SIGNAL(triggered()), this, SLOT(showSettingsKCM()));
     connect(showContactListAction, SIGNAL(triggered()), this, SLOT(toggleContactList()));
     connect(addContactAction, SIGNAL(triggered()), this, SLOT(onAddContactRequest()));
     connect(joinChatroomAction, SIGNAL(triggered()), this, SLOT(onJoinChatRoomRequest()));
@@ -283,7 +216,7 @@ void TelepathyPresenceApplet::setupContextMenuActions()
     }
 
     m_contextActions.append(moreMenu->addSeparator());
-    m_contextActions.append(showAccountManagerAction);
+    m_contextActions.append(showSettingsKCMAction);
     m_contextActions.append(showContactListAction);
 
     m_contextActions.append(moreMenu->addSeparator());
@@ -321,9 +254,12 @@ void TelepathyPresenceApplet::onAccountsChanged()
     }
 }
 
-void TelepathyPresenceApplet::startAccountManager()
+void TelepathyPresenceApplet::showSettingsKCM()
 {
-    KToolInvocation::startServiceByDesktopName("kcm_ktp_accounts");
+    KTp::SettingsKcmDialog *dialog = new KTp::SettingsKcmDialog();
+    dialog->addGeneralSettingsModule();
+    dialog->addNotificationsModule();
+    dialog->show();
 }
 
 void TelepathyPresenceApplet::toggleContactList()
@@ -390,7 +326,7 @@ void TelepathyPresenceApplet::onPresenceChanged(KTp::Presence presence)
     svgIcon.setImagePath("icons/presence-applet");
     if (svgIcon.hasElement(iconBaseName+"-plasma")) {
         svgIcon.resize(150,150);
-        KIcon icon = KIcon(svgIcon.pixmap(iconBaseName+"-plasma"));
+        KIcon icon(svgIcon.pixmap(iconBaseName+"-plasma"));
         m_icon->setIcon(icon);
     } else {
         m_icon->setIcon(presence.icon());
@@ -419,7 +355,7 @@ void TelepathyPresenceApplet::toolTipAboutToShow()
     Plasma::ToolTipContent content;
     KUser user;
 
-    QString presenceMsg = QString(m_globalPresence->currentPresence().statusMessage());
+    QString presenceMsg(m_globalPresence->requestedPresence().statusMessage());
 
     content.setImage(KIcon("telepathy-kde"));
     content.setMainText(user.loginName());
@@ -429,7 +365,7 @@ void TelepathyPresenceApplet::toolTipAboutToShow()
     } else if (!presenceMsg.isEmpty()) {
         content.setSubText(presenceMsg);
     } else {
-        content.setSubText(m_globalPresence->currentPresence().displayString());
+        content.setSubText(m_globalPresence->requestedPresence().displayString());
     }
 
     Plasma::ToolTipManager::self()->setContent(this, content);

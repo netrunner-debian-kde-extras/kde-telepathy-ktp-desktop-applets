@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Marek Laane <bald@smail.ee>, 2012.
+# Marek Laane <bald@smail.ee>, 2012, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2013-09-24 05:32+0000\n"
-"PO-Revision-Date: 2012-10-29 13:23+0200\n"
+"PO-Revision-Date: 2014-06-11 03:48+0300\n"
 "Last-Translator: Marek Laane <bald@smail.ee>\n"
 "Language-Team: Estonian <kde-et@linux.ee>\n"
 "Language: et\n"
@@ -46,9 +46,8 @@ msgid "Offline"
 msgstr "Pole võrgus"
 
 #: src/presence-applet.cpp:258
-#, fuzzy
 msgid "Join Chat Room..."
-msgstr "Liitu jututoaga"
+msgstr "Liitu jututoaga..."
 
 #: src/presence-applet.cpp:261
 msgid "Account Manager..."
@@ -68,7 +67,7 @@ msgstr "Helista..."
 
 #: src/presence-applet.cpp:270
 msgid "Send a File..."
-msgstr ""
+msgstr "Saada fail..."
 
 #: src/presence-applet.cpp:428
 msgid "Connecting..."
