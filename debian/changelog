@@ -1,3 +1,10 @@
+ktp-desktop-applets (0.9.0-0ubuntu1) UNRELEASED; urgency=medium
+
+  * New upstream release
+  * Merge with Debian unstable, no changes
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 28 Oct 2014 13:14:02 +0100
+
 ktp-desktop-applets (0.8.80-1) UNRELEASED; urgency=medium
 
   * New upstream release.
@@ -58,3 +65,103 @@ ktp-desktop-applets (0.6.3-1) unstable; urgency=low
   * Update Build-Depends: libktpcommoninternalsprivate-dev (>= 0.6.3)
 
  -- Mark Purcell <msp@debian.org>  Sun, 11 Aug 2013 10:41:33 +1000
+
+ktp-desktop-applets (0.8.1-0ubuntu1) utopic; urgency=medium
+
+  * New upstream release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Mon, 28 Apr 2014 17:14:26 +0200
+
+ktp-desktop-applets (0.8.0-0ubuntu1) trusty; urgency=medium
+
+  * New upstream release (LP: #1297351)
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Tue, 01 Apr 2014 15:15:58 +0200
+
+ktp-desktop-applets (0.7.80-0ubuntu1) trusty; urgency=medium
+
+  * New upstream release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Tue, 18 Feb 2014 00:14:28 +0100
+
+ktp-desktop-applets (0.7.1-0ubuntu1) trusty; urgency=medium
+
+  * New upstream release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Wed, 29 Jan 2014 19:46:28 +0100
+
+ktp-desktop-applets (0.7.0-0ubuntu3) trusty; urgency=low
+
+  * For the oddest of all reasons source:Version is substituted with
+    what ought to be the binary version (i.e. not 0.7.0).
+    Use source:Upstream-Version instead.
+
+ -- Harald Sitter <apachelogger@kubuntu.org>  Thu, 02 Jan 2014 10:35:15 +0100
+
+ktp-desktop-applets (0.7.0-0ubuntu2) trusty; urgency=low
+
+  * Add dependency on kde-telepathy-declarative (>= #{source:Version}) which
+    contains the shared declarative plugin.
+    According to upstream the versions should always align, so >=source gives
+    the best quality here.
+    LP: #1234084
+
+ -- Harald Sitter <apachelogger@kubuntu.org>  Wed, 04 Dec 2013 13:38:14 +0100
+
+ktp-desktop-applets (0.7.0-0ubuntu1) trusty; urgency=low
+
+  * New upstream release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Tue, 29 Oct 2013 12:46:54 +0100
+
+ktp-desktop-applets (0.6.3-0ubuntu1) saucy; urgency=low
+
+  * New upstream release (LP: #1208837)
+  * Bump on libktpcommoninternalsprivate-dev
+
+ -- Howard Chan <smartboyhw@gmail.com>  Tue, 06 Aug 2013 21:50:23 +0800
+
+ktp-desktop-applets (0.6.2-0ubuntu1) saucy; urgency=low
+
+  * New upstream release
+  * Added debian/watch file
+  * Bump on libktpcommoninternalsprivate-dev
+
+ -- Michał Zając <quintasan@kubuntu.org>  Fri, 21 Jun 2013 15:06:44 +0200
+
+ktp-desktop-applets (0.6.1-0ubuntu1) raring; urgency=low
+
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 17 Apr 2013 12:33:43 +0100
+
+ktp-desktop-applets (0.6.0-0ubuntu2) raring; urgency=low
+
+  * Add upstream_l10n.patch
+    Upstream's tarball is missing a rather large amount of translations. This
+    patch adds all existing translations at the time of tagging. 
+
+ -- Harald Sitter <apachelogger@kubuntu.org>  Tue, 16 Apr 2013 12:20:26 +0200
+
+ktp-desktop-applets (0.6.0-0ubuntu1) raring; urgency=low
+
+  * New upstream release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Wed, 03 Apr 2013 11:17:31 +0100
+
+ktp-desktop-applets (0.5.80-0ubuntu2) raring; urgency=low
+
+  * kde-telepathy-dekstop-applets also Breaks/Replaces plasma-widget-telepathy-contact
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Fri, 15 Mar 2013 23:35:20 +0530
+
+ktp-desktop-applets (0.5.80-0ubuntu1) raring; urgency=low
+
+  [ Prasad Murthy ]
+  * Initial release
+
+  [ Scott Kitterman ]
+  * Fix debian/copyright
+  * Add gettext to depends
+
+ -- Prasad Murthy <phoenix_firebrd@yahoo.com>  Fri, 01 Feb 2013 17:09:14 +0530
