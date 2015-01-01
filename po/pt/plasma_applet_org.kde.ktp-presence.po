@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_org\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-09-24 05:32+0000\n"
+"POT-Creation-Date: 2014-09-17 05:13+0000\n"
 "PO-Revision-Date: 2013-04-22 10:47+0100\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
@@ -17,58 +17,55 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: src/presence-applet.cpp:184
+#: src/presence-applet.cpp:176
 msgid "More"
 msgstr "Mais"
 
-#: src/presence-applet.cpp:227
-msgid "Online"
-msgstr "Ligado"
-
-#: src/presence-applet.cpp:231
-msgid "Busy"
-msgstr "Ocupado"
-
-#: src/presence-applet.cpp:235
-msgid "Away"
-msgstr "Ausente"
-
-#: src/presence-applet.cpp:239
-msgid "Not Available"
-msgstr "Não Disponível"
-
-#: src/presence-applet.cpp:243
-msgid "Invisible"
-msgstr "Invisível"
-
-#: src/presence-applet.cpp:247
-msgid "Offline"
-msgstr "Desligado"
-
-#: src/presence-applet.cpp:258
+#: src/presence-applet.cpp:191
 msgid "Join Chat Room..."
 msgstr "Juntar-se à Sala de Conversação..."
 
-#: src/presence-applet.cpp:261
-msgid "Account Manager..."
-msgstr "Gestor de Contas..."
+#: src/presence-applet.cpp:194
+msgid "Instant Messaging Settings..."
+msgstr "Configuração das Mensagens Instantâneas..."
 
-#: src/presence-applet.cpp:262
+#: src/presence-applet.cpp:195
 msgid "Contact List..."
 msgstr "Lista de Contactos..."
 
-#: src/presence-applet.cpp:263
+#: src/presence-applet.cpp:196
 msgid "Add New Contacts..."
 msgstr "Adicionar Novos Contactos..."
 
-#: src/presence-applet.cpp:266
+#: src/presence-applet.cpp:199
 msgid "Make a Call..."
 msgstr "Fazer uma Chamada..."
 
-#: src/presence-applet.cpp:270
+#: src/presence-applet.cpp:203
 msgid "Send a File..."
 msgstr "Enviar um Ficheiro..."
 
-#: src/presence-applet.cpp:428
+#: src/presence-applet.cpp:364
 msgid "Connecting..."
 msgstr "A ligar..."
+
+#~ msgid "Online"
+#~ msgstr "Ligado"
+
+#~ msgid "Busy"
+#~ msgstr "Ocupado"
+
+#~ msgid "Away"
+#~ msgstr "Ausente"
+
+#~ msgid "Not Available"
+#~ msgstr "Não Disponível"
+
+#~ msgid "Invisible"
+#~ msgstr "Invisível"
+
+#~ msgid "Offline"
+#~ msgstr "Desligado"
+
+#~ msgid "Account Manager..."
+#~ msgstr "Gestor de Contas..."

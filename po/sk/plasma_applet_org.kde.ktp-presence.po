@@ -1,12 +1,12 @@
 # translation of plasma_applet_org.kde.ktp-presence.po to Slovak
-# Roman Paholik <wizzardsk@gmail.com>, 2012, 2013.
+# Roman Paholik <wizzardsk@gmail.com>, 2012, 2013, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_org.kde.ktp-presence\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-09-24 05:32+0000\n"
-"PO-Revision-Date: 2013-09-27 20:17+0200\n"
-"Last-Translator: Roman Paholík <wizzardsk@gmail.com>\n"
+"POT-Creation-Date: 2014-09-17 05:13+0000\n"
+"PO-Revision-Date: 2014-09-17 19:14+0200\n"
+"Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
@@ -15,58 +15,34 @@ msgstr ""
 "X-Generator: Lokalize 1.5\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
-#: src/presence-applet.cpp:184
+#: src/presence-applet.cpp:176
 msgid "More"
 msgstr "Viac"
 
-#: src/presence-applet.cpp:227
-msgid "Online"
-msgstr "Pripojený"
-
-#: src/presence-applet.cpp:231
-msgid "Busy"
-msgstr "Zaneprázdnený"
-
-#: src/presence-applet.cpp:235
-msgid "Away"
-msgstr "Neprítomný"
-
-#: src/presence-applet.cpp:239
-msgid "Not Available"
-msgstr "Nedostupný"
-
-#: src/presence-applet.cpp:243
-msgid "Invisible"
-msgstr "Neviditeľný"
-
-#: src/presence-applet.cpp:247
-msgid "Offline"
-msgstr "Nepripojený"
-
-#: src/presence-applet.cpp:258
+#: src/presence-applet.cpp:191
 msgid "Join Chat Room..."
 msgstr "Vstúpiť do miestnosti..."
 
-#: src/presence-applet.cpp:261
-msgid "Account Manager..."
-msgstr "Správca účtov..."
+#: src/presence-applet.cpp:194
+msgid "Instant Messaging Settings..."
+msgstr "Nastavenia instant messagingu..."
 
-#: src/presence-applet.cpp:262
+#: src/presence-applet.cpp:195
 msgid "Contact List..."
 msgstr "Zoznam kontaktov..."
 
-#: src/presence-applet.cpp:263
+#: src/presence-applet.cpp:196
 msgid "Add New Contacts..."
 msgstr "Pridať nové kontakty..."
 
-#: src/presence-applet.cpp:266
+#: src/presence-applet.cpp:199
 msgid "Make a Call..."
 msgstr "Spustiť hovor..."
 
-#: src/presence-applet.cpp:270
+#: src/presence-applet.cpp:203
 msgid "Send a File..."
 msgstr "Odoslať súbor..."
 
-#: src/presence-applet.cpp:428
+#: src/presence-applet.cpp:364
 msgid "Connecting..."
 msgstr "Pripájam..."

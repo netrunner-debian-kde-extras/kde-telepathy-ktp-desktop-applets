@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-09-24 05:32+0000\n"
+"POT-Creation-Date: 2014-09-17 05:13+0000\n"
 "PO-Revision-Date: 2013-10-02 13:42+0200\n"
 "Last-Translator: G.Sora <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-l10n-ia@kde.org>\n"
@@ -17,58 +17,55 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 1.5\n"
 
-#: src/presence-applet.cpp:184
+#: src/presence-applet.cpp:176
 msgid "More"
 msgstr "Altere"
 
-#: src/presence-applet.cpp:227
-msgid "Online"
-msgstr "In linea"
-
-#: src/presence-applet.cpp:231
-msgid "Busy"
-msgstr "Occupate"
-
-#: src/presence-applet.cpp:235
-msgid "Away"
-msgstr "Absente"
-
-#: src/presence-applet.cpp:239
-msgid "Not Available"
-msgstr "Non disponibile"
-
-#: src/presence-applet.cpp:243
-msgid "Invisible"
-msgstr "Invisibile"
-
-#: src/presence-applet.cpp:247
-msgid "Offline"
-msgstr "Foras de linea"
-
-#: src/presence-applet.cpp:258
+#: src/presence-applet.cpp:191
 msgid "Join Chat Room..."
 msgstr "Uni te al sala de conversation..."
 
-#: src/presence-applet.cpp:261
-msgid "Account Manager..."
-msgstr "Gerente de conto..."
+#: src/presence-applet.cpp:194
+msgid "Instant Messaging Settings..."
+msgstr ""
 
-#: src/presence-applet.cpp:262
+#: src/presence-applet.cpp:195
 msgid "Contact List..."
 msgstr "Lista de contacto..."
 
-#: src/presence-applet.cpp:263
+#: src/presence-applet.cpp:196
 msgid "Add New Contacts..."
 msgstr "Adde nove contactos"
 
-#: src/presence-applet.cpp:266
+#: src/presence-applet.cpp:199
 msgid "Make a Call..."
 msgstr "Face un appello..."
 
-#: src/presence-applet.cpp:270
+#: src/presence-applet.cpp:203
 msgid "Send a File..."
 msgstr "Invia un file"
 
-#: src/presence-applet.cpp:428
+#: src/presence-applet.cpp:364
 msgid "Connecting..."
 msgstr "Il connecte..."
+
+#~ msgid "Online"
+#~ msgstr "In linea"
+
+#~ msgid "Busy"
+#~ msgstr "Occupate"
+
+#~ msgid "Away"
+#~ msgstr "Absente"
+
+#~ msgid "Not Available"
+#~ msgstr "Non disponibile"
+
+#~ msgid "Invisible"
+#~ msgstr "Invisibile"
+
+#~ msgid "Offline"
+#~ msgstr "Foras de linea"
+
+#~ msgid "Account Manager..."
+#~ msgstr "Gerente de conto..."
