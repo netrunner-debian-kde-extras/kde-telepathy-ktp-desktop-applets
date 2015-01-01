@@ -6,9 +6,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-09-24 05:32+0000\n"
-"PO-Revision-Date: 2013-04-22 09:40+0200\n"
-"Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
+"POT-Creation-Date: 2014-09-17 05:13+0000\n"
+"PO-Revision-Date: 2014-04-08 12:50+0200\n"
+"Last-Translator: Vít Pelčák <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
@@ -17,58 +17,34 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Lokalize 1.5\n"
 
-#: src/presence-applet.cpp:184
+#: src/presence-applet.cpp:176
 msgid "More"
 msgstr "Více"
 
-#: src/presence-applet.cpp:227
-msgid "Online"
-msgstr "Připojen"
-
-#: src/presence-applet.cpp:231
-msgid "Busy"
-msgstr "Zaneprázdněn"
-
-#: src/presence-applet.cpp:235
-msgid "Away"
-msgstr "Pryč"
-
-#: src/presence-applet.cpp:239
-msgid "Not Available"
-msgstr "Nedostupný"
-
-#: src/presence-applet.cpp:243
-msgid "Invisible"
-msgstr "Neviditelný"
-
-#: src/presence-applet.cpp:247
-msgid "Offline"
-msgstr "Odpojen"
-
-#: src/presence-applet.cpp:258
+#: src/presence-applet.cpp:191
 msgid "Join Chat Room..."
 msgstr "Připojit se do místnosti..."
 
-#: src/presence-applet.cpp:261
-msgid "Account Manager..."
-msgstr "Správce účtů..."
+#: src/presence-applet.cpp:194
+msgid "Instant Messaging Settings..."
+msgstr "Nastavení komunikátoru..."
 
-#: src/presence-applet.cpp:262
+#: src/presence-applet.cpp:195
 msgid "Contact List..."
 msgstr "Seznam kontaktů..."
 
-#: src/presence-applet.cpp:263
+#: src/presence-applet.cpp:196
 msgid "Add New Contacts..."
 msgstr "Přidat nové kontakty...."
 
-#: src/presence-applet.cpp:266
+#: src/presence-applet.cpp:199
 msgid "Make a Call..."
 msgstr "Zahájit hovor..."
 
-#: src/presence-applet.cpp:270
+#: src/presence-applet.cpp:203
 msgid "Send a File..."
 msgstr "Poslat soubor..."
 
-#: src/presence-applet.cpp:428
+#: src/presence-applet.cpp:364
 msgid "Connecting..."
 msgstr "Připojuji se..."

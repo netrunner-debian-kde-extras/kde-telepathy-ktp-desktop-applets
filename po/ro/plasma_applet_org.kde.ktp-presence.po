@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-09-24 05:32+0000\n"
+"POT-Creation-Date: 2014-09-17 05:13+0000\n"
 "PO-Revision-Date: 2013-03-16 12:21+0200\n"
 "Last-Translator: Sergiu Bivol <sergiu@ase.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
@@ -18,58 +18,55 @@ msgstr ""
 "20)) ? 1 : 2;\n"
 "X-Generator: Lokalize 1.5\n"
 
-#: src/presence-applet.cpp:184
+#: src/presence-applet.cpp:176
 msgid "More"
 msgstr "Mai mult"
 
-#: src/presence-applet.cpp:227
-msgid "Online"
-msgstr "Conectat"
-
-#: src/presence-applet.cpp:231
-msgid "Busy"
-msgstr "Ocupat"
-
-#: src/presence-applet.cpp:235
-msgid "Away"
-msgstr "Plecat"
-
-#: src/presence-applet.cpp:239
-msgid "Not Available"
-msgstr "Indisponibil"
-
-#: src/presence-applet.cpp:243
-msgid "Invisible"
-msgstr "Invizibil"
-
-#: src/presence-applet.cpp:247
-msgid "Offline"
-msgstr "Deconectat"
-
-#: src/presence-applet.cpp:258
+#: src/presence-applet.cpp:191
 msgid "Join Chat Room..."
 msgstr "Alăturare la camera de discuții..."
 
-#: src/presence-applet.cpp:261
-msgid "Account Manager..."
-msgstr "Administrator de conturi..."
+#: src/presence-applet.cpp:194
+msgid "Instant Messaging Settings..."
+msgstr ""
 
-#: src/presence-applet.cpp:262
+#: src/presence-applet.cpp:195
 msgid "Contact List..."
 msgstr "Listă de contacte..."
 
-#: src/presence-applet.cpp:263
+#: src/presence-applet.cpp:196
 msgid "Add New Contacts..."
 msgstr "Adăugare contacte noi..."
 
-#: src/presence-applet.cpp:266
+#: src/presence-applet.cpp:199
 msgid "Make a Call..."
 msgstr "Efectuare apel..."
 
-#: src/presence-applet.cpp:270
+#: src/presence-applet.cpp:203
 msgid "Send a File..."
 msgstr ""
 
-#: src/presence-applet.cpp:428
+#: src/presence-applet.cpp:364
 msgid "Connecting..."
 msgstr "Se conectează..."
+
+#~ msgid "Online"
+#~ msgstr "Conectat"
+
+#~ msgid "Busy"
+#~ msgstr "Ocupat"
+
+#~ msgid "Away"
+#~ msgstr "Plecat"
+
+#~ msgid "Not Available"
+#~ msgstr "Indisponibil"
+
+#~ msgid "Invisible"
+#~ msgstr "Invizibil"
+
+#~ msgid "Offline"
+#~ msgstr "Deconectat"
+
+#~ msgid "Account Manager..."
+#~ msgstr "Administrator de conturi..."

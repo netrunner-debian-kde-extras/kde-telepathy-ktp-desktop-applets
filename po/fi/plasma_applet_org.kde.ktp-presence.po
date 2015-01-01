@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_ktp_presence\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-09-24 05:32+0000\n"
-"PO-Revision-Date: 2013-12-22 13:54+0200\n"
+"POT-Creation-Date: 2014-09-17 05:13+0000\n"
+"PO-Revision-Date: 2014-04-07 11:10+0300\n"
 "Last-Translator: Lasse Liehu <lasse.liehu@gmail.com>\n"
 "Language-Team: Finnish <lokalisointi@lists.coss.fi>\n"
 "Language: fi\n"
@@ -22,61 +22,58 @@ msgstr ""
 "X-POT-Import-Date: 2012-06-15 07:12:07+0000\n"
 "X-Generator: Lokalize 1.5\n"
 
-#: src/presence-applet.cpp:184
+#: src/presence-applet.cpp:176
 msgid "More"
 msgstr "Lisää"
 
-#: src/presence-applet.cpp:227
-msgid "Online"
-msgstr "Paikalla"
-
-#: src/presence-applet.cpp:231
-msgid "Busy"
-msgstr "Varattu"
-
-#: src/presence-applet.cpp:235
-msgid "Away"
-msgstr "Poissa"
-
-#: src/presence-applet.cpp:239
-msgid "Not Available"
-msgstr "Ei saatavilla"
-
-#: src/presence-applet.cpp:243
-msgid "Invisible"
-msgstr "Näkymätön"
-
-#: src/presence-applet.cpp:247
-msgid "Offline"
-msgstr "Poissa"
-
-#: src/presence-applet.cpp:258
+#: src/presence-applet.cpp:191
 msgid "Join Chat Room..."
 msgstr "Liity keskusteluhuoneeseen…"
 
-#: src/presence-applet.cpp:261
-msgid "Account Manager..."
-msgstr "Tilinhallinta…"
+#: src/presence-applet.cpp:194
+msgid "Instant Messaging Settings..."
+msgstr "Pikaviestinnän asetukset…"
 
-#: src/presence-applet.cpp:262
+#: src/presence-applet.cpp:195
 msgid "Contact List..."
 msgstr "Yhteystietoluettelo…"
 
-#: src/presence-applet.cpp:263
+#: src/presence-applet.cpp:196
 msgid "Add New Contacts..."
 msgstr "Lisää uusia yhteystietoja…"
 
-#: src/presence-applet.cpp:266
+#: src/presence-applet.cpp:199
 msgid "Make a Call..."
 msgstr "Soita…"
 
-#: src/presence-applet.cpp:270
+#: src/presence-applet.cpp:203
 msgid "Send a File..."
 msgstr "Lähetä tiedosto…"
 
-#: src/presence-applet.cpp:428
+#: src/presence-applet.cpp:364
 msgid "Connecting..."
 msgstr "Yhdistetään…"
+
+#~ msgid "Online"
+#~ msgstr "Paikalla"
+
+#~ msgid "Busy"
+#~ msgstr "Varattu"
+
+#~ msgid "Away"
+#~ msgstr "Poissa"
+
+#~ msgid "Not Available"
+#~ msgstr "Ei saatavilla"
+
+#~ msgid "Invisible"
+#~ msgstr "Näkymätön"
+
+#~ msgid "Offline"
+#~ msgstr "Poissa"
+
+#~ msgid "Account Manager..."
+#~ msgstr "Tilinhallinta…"
 
 #~ msgid "No Account Selected"
 #~ msgstr "Tiliä ei ole valittu"

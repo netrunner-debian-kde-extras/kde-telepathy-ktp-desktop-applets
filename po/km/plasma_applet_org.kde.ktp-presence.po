@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_ktp_presence\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-09-24 05:32+0000\n"
+"POT-Creation-Date: 2014-09-17 05:13+0000\n"
 "PO-Revision-Date: 2012-07-10 09:59+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -18,67 +18,64 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/presence-applet.cpp:184
+#: src/presence-applet.cpp:176
 msgid "More"
 msgstr "ច្រើន​ទៀត"
 
-#: src/presence-applet.cpp:227
-msgid "Online"
-msgstr "លើបណ្ដាញ"
-
-#: src/presence-applet.cpp:231
-msgid "Busy"
-msgstr "រវល់"
-
-#: src/presence-applet.cpp:235
-msgid "Away"
-msgstr "ចាកឆ្ងាយ"
-
-#: src/presence-applet.cpp:239
-msgid "Not Available"
-msgstr "មិន​ទំនេរ"
-
-#: src/presence-applet.cpp:243
-msgid "Invisible"
-msgstr "មើល​មិនឃើញ"
-
-#: src/presence-applet.cpp:247
-msgid "Offline"
-msgstr "ក្រៅ​បណ្ដាញ"
-
-#: src/presence-applet.cpp:258
+#: src/presence-applet.cpp:191
 msgid "Join Chat Room..."
 msgstr ""
 
-#: src/presence-applet.cpp:261
-#, fuzzy
-#| msgid "Account Manager"
-msgid "Account Manager..."
-msgstr "កម្មវិធី​គ្រប់គ្រង​គណនី"
+#: src/presence-applet.cpp:194
+msgid "Instant Messaging Settings..."
+msgstr ""
 
-#: src/presence-applet.cpp:262
+#: src/presence-applet.cpp:195
 #, fuzzy
 #| msgid "Contact List"
 msgid "Contact List..."
 msgstr "បញ្ជី​ទំនាក់ទំនង"
 
-#: src/presence-applet.cpp:263
+#: src/presence-applet.cpp:196
 #, fuzzy
 #| msgid "Add New Contacts"
 msgid "Add New Contacts..."
 msgstr "បន្ថែម​ទំនាក់ទំនង​ថ្មី"
 
-#: src/presence-applet.cpp:266
+#: src/presence-applet.cpp:199
 msgid "Make a Call..."
 msgstr ""
 
-#: src/presence-applet.cpp:270
+#: src/presence-applet.cpp:203
 msgid "Send a File..."
 msgstr ""
 
-#: src/presence-applet.cpp:428
+#: src/presence-applet.cpp:364
 msgid "Connecting..."
 msgstr "កំពុង​តភ្ជាប់..."
+
+#~ msgid "Online"
+#~ msgstr "លើបណ្ដាញ"
+
+#~ msgid "Busy"
+#~ msgstr "រវល់"
+
+#~ msgid "Away"
+#~ msgstr "ចាកឆ្ងាយ"
+
+#~ msgid "Not Available"
+#~ msgstr "មិន​ទំនេរ"
+
+#~ msgid "Invisible"
+#~ msgstr "មើល​មិនឃើញ"
+
+#~ msgid "Offline"
+#~ msgstr "ក្រៅ​បណ្ដាញ"
+
+#, fuzzy
+#~| msgid "Account Manager"
+#~ msgid "Account Manager..."
+#~ msgstr "កម្មវិធី​គ្រប់គ្រង​គណនី"
 
 #~ msgid ""
 #~ "Seems like you forgot to select an account. Also do not forget to connect "

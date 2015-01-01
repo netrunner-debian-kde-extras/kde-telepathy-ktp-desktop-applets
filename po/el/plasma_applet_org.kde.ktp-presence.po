@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_ktp_presence\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-09-24 05:32+0000\n"
+"POT-Creation-Date: 2014-09-17 05:13+0000\n"
 "PO-Revision-Date: 2014-04-19 20:27+0300\n"
 "Last-Translator: Dimitris Kardarakos <dimkard@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
@@ -20,61 +20,58 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 1.5\n"
 
-#: src/presence-applet.cpp:184
+#: src/presence-applet.cpp:176
 msgid "More"
 msgstr "Περισσότερα"
 
-#: src/presence-applet.cpp:227
-msgid "Online"
-msgstr "Σε σύνδεση"
-
-#: src/presence-applet.cpp:231
-msgid "Busy"
-msgstr "Απασχολημένος"
-
-#: src/presence-applet.cpp:235
-msgid "Away"
-msgstr "Αλλού"
-
-#: src/presence-applet.cpp:239
-msgid "Not Available"
-msgstr "Μη διαθέσιμος"
-
-#: src/presence-applet.cpp:243
-msgid "Invisible"
-msgstr "Αόρατος"
-
-#: src/presence-applet.cpp:247
-msgid "Offline"
-msgstr "Εκτός σύνδεσης"
-
-#: src/presence-applet.cpp:258
+#: src/presence-applet.cpp:191
 msgid "Join Chat Room..."
 msgstr "Είσοδος στην αίθουσα συνομιλίας..."
 
-#: src/presence-applet.cpp:261
-msgid "Account Manager..."
-msgstr "Πρόγραμμα διαχείρισης λογαριασμού..."
+#: src/presence-applet.cpp:194
+msgid "Instant Messaging Settings..."
+msgstr ""
 
-#: src/presence-applet.cpp:262
+#: src/presence-applet.cpp:195
 msgid "Contact List..."
 msgstr "Λίστα επαφών..."
 
-#: src/presence-applet.cpp:263
+#: src/presence-applet.cpp:196
 msgid "Add New Contacts..."
 msgstr "Προσθήκη νέων επαφών..."
 
-#: src/presence-applet.cpp:266
+#: src/presence-applet.cpp:199
 msgid "Make a Call..."
 msgstr "Κάνετε μία κλήση..."
 
-#: src/presence-applet.cpp:270
+#: src/presence-applet.cpp:203
 msgid "Send a File..."
 msgstr "Αποστολή αρχείου..."
 
-#: src/presence-applet.cpp:428
+#: src/presence-applet.cpp:364
 msgid "Connecting..."
 msgstr "Συνδέεται..."
+
+#~ msgid "Online"
+#~ msgstr "Σε σύνδεση"
+
+#~ msgid "Busy"
+#~ msgstr "Απασχολημένος"
+
+#~ msgid "Away"
+#~ msgstr "Αλλού"
+
+#~ msgid "Not Available"
+#~ msgstr "Μη διαθέσιμος"
+
+#~ msgid "Invisible"
+#~ msgstr "Αόρατος"
+
+#~ msgid "Offline"
+#~ msgstr "Εκτός σύνδεσης"
+
+#~ msgid "Account Manager..."
+#~ msgstr "Πρόγραμμα διαχείρισης λογαριασμού..."
 
 #~ msgid ""
 #~ "Seems like you forgot to select an account. Also do not forget to connect "

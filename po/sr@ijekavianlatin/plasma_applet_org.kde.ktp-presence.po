@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_org.kde.ktp-presence\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-09-24 05:32+0000\n"
-"PO-Revision-Date: 2013-04-28 15:52+0200\n"
+"POT-Creation-Date: 2014-09-17 05:13+0000\n"
+"PO-Revision-Date: 2014-04-13 15:27+0200\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
 "Language: sr@ijekavianlatin\n"
@@ -18,58 +18,34 @@ msgstr ""
 "X-Text-Markup: kde4\n"
 "X-Environment: kde\n"
 
-#: src/presence-applet.cpp:184
+#: src/presence-applet.cpp:176
 msgid "More"
 msgstr "Još"
 
-#: src/presence-applet.cpp:227
-msgid "Online"
-msgstr "Na vezi"
-
-#: src/presence-applet.cpp:231
-msgid "Busy"
-msgstr "Zauzet"
-
-#: src/presence-applet.cpp:235
-msgid "Away"
-msgstr "Odsutan"
-
-#: src/presence-applet.cpp:239
-msgid "Not Available"
-msgstr "Nedostupan"
-
-#: src/presence-applet.cpp:243
-msgid "Invisible"
-msgstr "Nevidljiv"
-
-#: src/presence-applet.cpp:247
-msgid "Offline"
-msgstr "Van veze"
-
-#: src/presence-applet.cpp:258
+#: src/presence-applet.cpp:191
 msgid "Join Chat Room..."
 msgstr "U sobu za ćaskanje..."
 
-#: src/presence-applet.cpp:261
-msgid "Account Manager..."
-msgstr "Menadžer naloga..."
+#: src/presence-applet.cpp:194
+msgid "Instant Messaging Settings..."
+msgstr "Brzoglasničke postavke..."
 
-#: src/presence-applet.cpp:262
+#: src/presence-applet.cpp:195
 msgid "Contact List..."
 msgstr "Lista kontakata..."
 
-#: src/presence-applet.cpp:263
+#: src/presence-applet.cpp:196
 msgid "Add New Contacts..."
 msgstr "Dodaj nove kontakte..."
 
-#: src/presence-applet.cpp:266
+#: src/presence-applet.cpp:199
 msgid "Make a Call..."
 msgstr "Pozovi..."
 
-#: src/presence-applet.cpp:270
+#: src/presence-applet.cpp:203
 msgid "Send a File..."
 msgstr "Pošalji fajl..."
 
-#: src/presence-applet.cpp:428
+#: src/presence-applet.cpp:364
 msgid "Connecting..."
 msgstr "Povezujem se..."

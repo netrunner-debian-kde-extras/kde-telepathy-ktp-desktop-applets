@@ -1,14 +1,14 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Freek de Kruijf <freekdekruijf@kde.nl>, 2013.
+# Freek de Kruijf <freekdekruijf@kde.nl>, 2013, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-09-24 05:32+0000\n"
-"PO-Revision-Date: 2013-09-24 09:51+0200\n"
-"Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
+"POT-Creation-Date: 2014-09-17 05:13+0000\n"
+"PO-Revision-Date: 2014-09-17 16:41+0200\n"
+"Last-Translator: Freek de Kruijf <freek@opensuse.org>\n"
 "Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
@@ -17,58 +17,55 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 1.5\n"
 
-#: src/presence-applet.cpp:184
+#: src/presence-applet.cpp:176
 msgid "More"
 msgstr "Meer"
 
-#: src/presence-applet.cpp:227
-msgid "Online"
-msgstr "Online"
-
-#: src/presence-applet.cpp:231
-msgid "Busy"
-msgstr "Bezet"
-
-#: src/presence-applet.cpp:235
-msgid "Away"
-msgstr "Afwezig"
-
-#: src/presence-applet.cpp:239
-msgid "Not Available"
-msgstr "Niet beschikbaar"
-
-#: src/presence-applet.cpp:243
-msgid "Invisible"
-msgstr "Onzichtbaar"
-
-#: src/presence-applet.cpp:247
-msgid "Offline"
-msgstr "Offline"
-
-#: src/presence-applet.cpp:258
+#: src/presence-applet.cpp:191
 msgid "Join Chat Room..."
 msgstr "Met chatroom meedoen..."
 
-#: src/presence-applet.cpp:261
-msgid "Account Manager..."
-msgstr "Accountbeheerder..."
+#: src/presence-applet.cpp:194
+msgid "Instant Messaging Settings..."
+msgstr "Instellingen voor Instant Messaging..."
 
-#: src/presence-applet.cpp:262
+#: src/presence-applet.cpp:195
 msgid "Contact List..."
 msgstr "Contactenlijst..."
 
-#: src/presence-applet.cpp:263
+#: src/presence-applet.cpp:196
 msgid "Add New Contacts..."
 msgstr "Nieuw contactpersonen toevoegen..."
 
-#: src/presence-applet.cpp:266
+#: src/presence-applet.cpp:199
 msgid "Make a Call..."
 msgstr "Start een oproep..."
 
-#: src/presence-applet.cpp:270
+#: src/presence-applet.cpp:203
 msgid "Send a File..."
 msgstr "Een bestand verzenden..."
 
-#: src/presence-applet.cpp:428
+#: src/presence-applet.cpp:364
 msgid "Connecting..."
 msgstr "Verbinden..."
+
+#~ msgid "Online"
+#~ msgstr "Online"
+
+#~ msgid "Busy"
+#~ msgstr "Bezet"
+
+#~ msgid "Away"
+#~ msgstr "Afwezig"
+
+#~ msgid "Not Available"
+#~ msgstr "Niet beschikbaar"
+
+#~ msgid "Invisible"
+#~ msgstr "Onzichtbaar"
+
+#~ msgid "Offline"
+#~ msgstr "Offline"
+
+#~ msgid "Account Manager..."
+#~ msgstr "Accountbeheerder..."
