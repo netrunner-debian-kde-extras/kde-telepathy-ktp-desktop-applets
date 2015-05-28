@@ -1,4 +1,4 @@
-ktp-desktop-applets (0.9.0-1) UNRELEASED; urgency=medium
+ktp-desktop-applets (0.9.0-1) unstable; urgency=medium
 
   * New upstream release.
   * Update copyright file.
@@ -7,7 +7,7 @@ ktp-desktop-applets (0.9.0-1) UNRELEASED; urgency=medium
   * Update Standards-Version to 3.9.6. No changes needed.
   * Update debian/watch file to use http://download.kde.org
 
- -- Diane Trout <diane@ghic.org>  Sat, 20 Sep 2014 20:41:41 -0700
+ -- Diane Trout <diane@ghic.org>  Sat, 25 Apr 2015 19:58:23 -0700
 
 ktp-desktop-applets (0.8.1-1) unstable; urgency=medium
 
