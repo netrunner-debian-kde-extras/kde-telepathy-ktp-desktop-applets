@@ -1,6 +1,5 @@
 /***************************************************************************
- *   Copyright (C) 2011 by Francesco Nwokeka <francesco.nwokeka@gmail.com> *
- *   Copyright (C) 2014 by Aleix Pol Gonzalez <aleixpol@kde.org>           *
+ *   Copyright (C) 2014 by Aleix Pol Gonzalez <aleixpol@blue-systems.com>  *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -15,23 +14,24 @@
  *   You should have received a copy of the GNU General Public License     *
  *   along with this program; if not, write to the                         *
  *   Free Software Foundation, Inc.,                                       *
- *   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA            *
+ *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA .        *
  ***************************************************************************/
 
-import QtQuick 2.1
+import QtQuick 2.4
+import QtQuick.Layouts 1.1
+
+import org.kde.people 1.0
+import org.kde.plasma.core 2.0 as PlasmaCore
+import org.kde.plasma.components 2.0 as PlasmaComponents
 import org.kde.plasma.plasmoid 2.0
 
-QtObject
-{
-    Plasmoid.switchWidth: 0
-    Plasmoid.switchHeight: 0
-    Plasmoid.preferredRepresentation: Plasmoid.fullRepresentation
-    Plasmoid.fullRepresentation: FullChatList {}
-    Plasmoid.onActivated: Plasmoid.fullRepresentationItem.activate()
+Item {
+    id: main
 
-    function action_clearChatList() { Plasmoid.fullRepresentationItem.closeAllConversations(); }
-    Component.onCompleted: {
-        plasmoid.setAction("clearChatList", i18n("Close All Conversations"), "edit-clear");
-        plasmoid.setActionSeparator("actions");
-    }
+    Plasmoid.switchWidth: units.gridUnit * 4
+    Plasmoid.switchHeight: units.gridUnit * 4
+
+    Plasmoid.compactRepresentation: Person {}
+    Plasmoid.fullRepresentation: Person {}
+
 }
