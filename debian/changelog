@@ -6,6 +6,9 @@ ktp-desktop-applets (15.04.3-1) UNRELEASED; urgency=medium
   * New upstream release.
   * Update build dependencies for move to Qt5 and rename of
     libktpcommoninternalsprivate-dev to libktp-dev
+  * Use dhmk from pkg-kde-tools to build ktp.
+    - Change maintainer to debian-qt-kde
+    - Update debian/rules
 
  -- Diane Trout <diane@debian.org>  Wed, 27 May 2015 23:08:00 -0700
 
