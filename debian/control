@@ -5,10 +5,13 @@ Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
 Uploaders: Diane Trout <diane@debian.org>, Michał Zając <quintasan@kubuntu.org>, Mark Purcell <msp@debian.org>
 Build-Depends: debhelper (>= 9),
  pkg-kde-tools (>= 0.9),
- libtelepathy-qt4-dev (>= 0.9.1),
- kdelibs5-dev (>= 4:4.6),
+ libtelepathy-qt5-dev (>= 0.9.1),
  cmake (>= 2.8),
- libktpcommoninternalsprivate-dev (>= 0.9.0),
+ libktp-dev (>= 15.04),
+ extra-cmake-modules (>= 0.0.11),
+ qtdeclarative5-dev,
+ plasma-framework-dev,
+ libkf5windowsystem-dev,
 Standards-Version: 3.9.6
 Homepage: https://projects.kde.org/projects/kde/kdenetwork/ktp-desktop-applets
 Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-extras/kde-telepathy/ktp-desktop-applets.git
