@@ -9,6 +9,7 @@ ktp-desktop-applets (15.04.3-1) UNRELEASED; urgency=medium
   * Use dhmk from pkg-kde-tools to build ktp.
     - Change maintainer to debian-qt-kde
     - Update debian/rules
+  * Add KDE's unstable download url to watch file
 
  -- Diane Trout <diane@debian.org>  Wed, 27 May 2015 23:08:00 -0700
 
