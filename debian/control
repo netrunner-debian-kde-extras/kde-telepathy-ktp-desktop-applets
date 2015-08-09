@@ -22,7 +22,7 @@ Architecture: any
 Replaces: plasma-widget-telepathy-presence (<= 0.6.1-1), 
  plasma-widget-telepathy-chat (<= 0.6.1-1),
  ktp-telepathy-contact-list (<= 0.6.1-1)
-Depends: kde-telepathy-declarative (>= ${source:Upstream-Version}), ${shlibs:Depends}, ${misc:Depends}
+Depends: qml-module-org-kde-telepathy (>= ${source:Upstream-Version}), ${shlibs:Depends}, ${misc:Depends}
 Description: KDE Telepathy contact plasmoid
  This package provides widgets that allow you to have any
  of your IM contacts easily accessible as an icon on your desktop.

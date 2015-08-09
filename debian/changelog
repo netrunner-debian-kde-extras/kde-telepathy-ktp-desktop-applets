@@ -10,6 +10,8 @@ ktp-desktop-applets (15.04.3-1) UNRELEASED; urgency=medium
     - Change maintainer to debian-qt-kde
     - Update debian/rules
   * Add KDE's unstable download url to watch file
+  * kde-telepathy-declarative was renamed to qml-module-org-kde-
+    telepathy
 
  -- Diane Trout <diane@debian.org>  Wed, 27 May 2015 23:08:00 -0700
 
