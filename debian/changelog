@@ -1,7 +1,6 @@
 ktp-desktop-applets (15.08.2-1) UNRELEASED; urgency=medium
 
   * Apply homepage update patch from Matthew Cope
-  * Update Diane Trout's email address.
   * Update watch file for KTp's move to Applications.
   * New upstream release.
   * Update build dependencies for move to Qt5 and rename of
