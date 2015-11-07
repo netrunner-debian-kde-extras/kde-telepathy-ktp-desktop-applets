@@ -2,7 +2,7 @@ ktp-desktop-applets (15.08.2-1) UNRELEASED; urgency=medium
 
   * Apply homepage update patch from Matthew Cope
   * Update watch file for KTp's move to Applications.
-  * New upstream release.
+  * New upstream release. (Closes: #791894)
   * Update build dependencies for move to Qt5 and rename of
     libktpcommoninternalsprivate-dev to libktp-dev
   * Use dhmk from pkg-kde-tools to build ktp.
